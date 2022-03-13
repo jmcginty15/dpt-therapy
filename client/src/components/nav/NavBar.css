@@ -17,7 +17,10 @@
 }
 
 #brand-logo-container {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 1rem;
+    padding: 0;
 }
 
 .NavBar-item {
@@ -26,27 +29,42 @@
 
 .NavBar-link {
     position: relative;
-    color: var(--accent);
 }
 
 .NavBar-link:hover {
     cursor: pointer;
-    color: var(--accent-variant);
+    color: var(--accent);
     font-weight: bolder;
     transition: 0.15s;
 }
 
+.NavBar-link-button {
+    background-color: var(--accent);
+    padding: 10px;
+    border-radius: 5px;
+    border: solid black 1px;
+    color: white;
+}
+
+.NavBar-link-button:hover {
+    cursor: pointer;
+    background-color: var(--accent-variant);
+    transition: 0.15s;
+}
+
+.fa-credit-card {
+    font-size: larger;
+}
+
 .NavBar-link-social {
     margin: 0;
-    padding: 0;
     font-size: x-large;
     position: relative;
-    color: var(--accent);
 }
 
 .NavBar-link-social:hover {
     cursor: pointer;
-    color: var(--accent-variant);
+    color: var(--accent-variant) !important;
     transition: 0.15s;
 }
 
@@ -59,7 +77,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid var(--accent-variant);
+    border-bottom: 1px solid var(--accent);
     width: 0%;
     transition: 0.25s;
 }
@@ -96,4 +114,9 @@
 .NavBar-item {
     text-align: center;
     margin: auto;
+}
+
+#Nav {
+    padding-top: 0;
+    padding-bottom: 0;
 }

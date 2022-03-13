@@ -1,0 +1,81 @@
+.Footer {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    text-align: left;
+    background-color: #222222;
+    color: var(--accent);
+    border-top: solid #c8c8c8 2px;
+}
+
+.Footer-container {
+    display: grid;
+}
+
+@media (min-width: 768px) {
+    .Footer {
+        padding: 50px;
+    }
+
+    .Footer-container {
+        grid-template-columns: 50% 50%;
+    }
+
+    .Footer-right {
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    .Footer {
+        padding: 15px;
+    }
+
+    .Footer-container {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
+
+    .Footer-right {
+        text-align: center;
+    }
+}
+
+.Footer-link {
+    color: var(--accent);
+    border-radius: 5px;
+}
+
+.Footer-link:hover {
+    color: var(--accent-variant);
+    cursor: pointer;
+    transition: 0.25s;
+    background-color: white;
+}
+
+.Footer-link-white {
+    color: #c8c8c8;
+    border-radius: 5px;
+}
+
+.Footer-link-white:hover {
+    color: var(--accent-variant);
+    cursor: pointer;
+    transition: 0.25s;
+    background-color: white;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+.Footer-svg {
+    fill: #c8c8c8;
+}
+
+.Footer-svg:hover {
+    cursor: pointer;
+    fill: var(--accent-variant);
+    transition: 0.25s;
+}
+
+.Footer-tag {
+    margin-top: 40px;
+}

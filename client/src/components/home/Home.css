@@ -1,6 +1,6 @@
 .Home {
-    padding-bottom: 100px;
     min-height: calc(100vh - 228px);
+    text-align: center;
 }
 
 .Home-banner {
@@ -13,13 +13,9 @@
 }
 
 .Home-title {
-    position: absolute;
-    border: outset 2px var(--primary);
-    border-radius: 8px;
-    font-style: italic;
-    padding: 15px;
-    background-color: white;
-    height: fit-content;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .Home-info {
@@ -45,11 +41,8 @@
 }
 
 @media (min-width: 768px) {
-    .Home-title {
-        left: 0;
-        margin-left: 15px;
-        margin-right: auto;
-        width: fit-content;
+    .Home-about {
+        width: 50%;
     }
 
     .Home-info {
@@ -69,11 +62,7 @@
 }
 
 @media (max-width: 768px) {
-    .Home-title, .Home-info {
-        left: 50%;
-        transform: translate(-50%);
-        margin-left: auto;
-        margin-right: auto;
+    .Home-about, .Home-info {
         width: 90%;
     }
 
@@ -141,7 +130,7 @@
 .Home-banner-shade {
     z-index: 1;
     position: absolute;
-    background-image: radial-gradient(#00000000, #00000044);
+    background-image: radial-gradient(#00000000, #000000ff);
     height: 100%;
     width: 100%;
 }
@@ -165,4 +154,36 @@
 .Home-carousel, .Home-carousel-item, .carousel-inner {
     height: 100%;
     width: 100%;
+}
+
+.Home-about {
+    color: white;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.Home-about-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Home-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: var(--accent);
+    border-radius: 5px;
+    border: solid white 1px;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.Home-button:hover {
+    background-color: var(--accent-variant);
+    transition: 0.15s;
+}
+
+.fa-angle-right {
+    font-size: larger;
 }

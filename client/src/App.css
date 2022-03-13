@@ -6,13 +6,8 @@
   --accent: #522c82;
   --accent-variant: #2d1847;
 
-  --background: #254D32;
-  --text-primary: #816C61;
-  --text-accent: #C8C2AE;
-  --text-accent-variant: #A8BA9A;
-  --primary: #181D27;
-  --primary-variant: #242c3b;
-  --secondary: #654236;
+  --grey-1: #505050;
+  --grey-2: #909090;
 }
 
 .App {
