@@ -59,6 +59,30 @@
     .Home-banner-caption-text {
         font-size: 125px;
     }
+
+    .Home-get-started, .Home-testimonials {
+        grid-template-columns: 30% 70%;
+    }
+
+    .Home-services {
+        grid-template-columns: 70% 30%;
+    }
+
+    .Home-location {
+        grid-template-columns: 50% 50%;
+    }
+
+    .Home-image {
+        height: 100%;
+    }
+
+    .Home-image-overlay-left {
+        background: linear-gradient(to right, #00000033 70%, var(--accent));
+    }
+
+    .Home-image-overlay-right {
+        background: linear-gradient(to left, #00000033 70%, var(--grey-1));
+    }
 }
 
 @media (max-width: 768px) {
@@ -78,6 +102,22 @@
 
     .Home-banner-caption-text {
         font-size: 75px;
+    }
+
+    .Home-get-started, .Home-services, .Home-testimonials, .Home-location {
+        grid-template-columns: 100%;
+    }
+
+    .Home-image {
+        height: 400px;
+    }
+
+    .Home-image-overlay-left {
+        background: linear-gradient(to bottom, #00000033, var(--accent));
+    }
+
+    .Home-image-overlay-right {
+        background: linear-gradient(to bottom, #00000033, var(--grey-1));
     }
 }
 
@@ -162,6 +202,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    margin-bottom: 50px;
 }
 
 .Home-about-text {
@@ -171,7 +212,6 @@
 .Home-button {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    background-color: var(--accent);
     border-radius: 5px;
     border: solid white 1px;
     color: white;
@@ -179,11 +219,50 @@
     margin-top: 1rem;
 }
 
-.Home-button:hover {
+.Home-button-about {
+    background-color: var(--accent);
+}
+
+.Home-button-about:hover {
     background-color: var(--accent-variant);
+    transition: 0.15s;
+}
+
+.Home-button-get-started {
+    background-color: black;
+}
+
+.Home-button-get-started:hover {
+    background-color: var(--grey-3);
     transition: 0.15s;
 }
 
 .fa-angle-right {
     font-size: larger;
+}
+
+.Home-get-started, .Home-testimonials {
+    display: grid;
+    background-color: var(--accent);
+}
+
+.Home-services, .Home-location {
+    display: grid;
+    background-color: var(--grey-1);
+}
+
+.Home-image {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.Home-get-started-text, .Home-services-text {
+    padding: 2rem;
+    color: #c8c8c8;
+}
+
+.Home-image-overlay-left, .Home-image-overlay-right {
+    height: 100%;
+    width: 100%;
 }

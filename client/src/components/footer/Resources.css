@@ -38,8 +38,8 @@
 .Resources-link {
     color: #c8c8c8;
     text-decoration: none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .Resources-link:hover {

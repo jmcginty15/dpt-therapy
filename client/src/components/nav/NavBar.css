@@ -56,18 +56,6 @@
     font-size: larger;
 }
 
-.NavBar-link-social {
-    margin: 0;
-    font-size: x-large;
-    position: relative;
-}
-
-.NavBar-link-social:hover {
-    cursor: pointer;
-    color: var(--accent-variant) !important;
-    transition: 0.15s;
-}
-
 .NavBar-brand:hover {
     cursor: pointer;
 }

@@ -11,14 +11,20 @@ import { useState, useEffect } from 'react';
 // import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
 import logo from '../../assets/DPT_therapy_v4-03.png';
+import { ReactComponent as NavLogoHorizontal } from '../../assets/svg-logo.svg';
+import { ReactComponent as NavLogoVertical } from '../../assets/vertical-logo.svg';
+import _ from 'lodash';
 import './NavBar.css';
 
 // Navbar component
 const NavBar = () => {
     const navigate = useNavigate();
+    const [NavLogo, setNavLogo] = useState(window.innerWidth >= 768 ? NavLogoHorizontal : NavLogoVertical);
 
-    const facebook = 'https://www.facebook.com/RiataTherapySpecialists/';
-    const linkedIn = 'https://www.linkedin.com/in/darin-deaton-5545581a/';
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && !_.isEqual(NavLogo, NavLogoHorizontal)) setNavLogo(NavLogoHorizontal);
+        else if (!_.isEqual(NavLogo, NavLogoVertical)) setNavLogo(NavLogoVertical);
+    });
 
     const payPortal = 'https://quickclick.com/r/1ukuh';
 
@@ -62,10 +68,11 @@ const NavBar = () => {
             <Navbar id="Nav" style={{ backgroundColor: backgroundColor }} light={backgroundColor === '#ffffff'} dark={backgroundColor !== '#ffffff'} expand="md" fixed="top">
                 <NavbarBrand href="/" id="brand-logo-container">
                     <img src={logo} height={75} />
+                    {/* <NavLogo id="brand-logo" width={150} height={150} style={{ color: textColor }} /> */}
                 </NavbarBrand>
                 <NavbarToggler onClick={toggleOpen} />
                 <Collapse isOpen={open} navbar>
-                    <Nav className="mr-auto" navbar>
+                    <Nav className="ms-auto" navbar>
                         <NavItem className="NavBar-item">
                             <NavLink onClick={() => navigate('/about', false)} style={{ color: textColor }}><span className="NavBar-link">ABOUT</span></NavLink>
                         </NavItem>
@@ -86,8 +93,6 @@ const NavBar = () => {
                         </NavItem>
                     </Nav>
                 </Collapse>
-                <NavLink onClick={() => window.open(facebook, '_blank')}><span className="NavBar-link-social" style={{ color: textColor }}><i className="fa fa-facebook-square" aria-hidden="true" /></span></NavLink>
-                <NavLink onClick={() => window.open(linkedIn, '_blank')}><span className="NavBar-link-social" style={{ color: textColor }}><i className="fa fa-linkedin-square" aria-hidden="true" /></span></NavLink>
             </Navbar>
         </div>
     )

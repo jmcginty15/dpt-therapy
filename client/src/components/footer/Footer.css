@@ -2,7 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     text-align: left;
-    background-color: #222222;
+    background-color: var(--grey-2);
     color: var(--accent);
     border-top: solid #c8c8c8 2px;
 }
@@ -53,7 +53,7 @@
 }
 
 .Footer-link-white {
-    color: #c8c8c8;
+    color: white;
     border-radius: 5px;
 }
 
@@ -67,7 +67,8 @@
 }
 
 .Footer-svg {
-    fill: #c8c8c8;
+    fill: white;
+    color: white;
 }
 
 .Footer-svg:hover {
@@ -78,4 +79,16 @@
 
 .Footer-tag {
     margin-top: 40px;
+}
+
+.Footer-link-social {
+    margin: 0;
+    font-size: x-large;
+    position: relative;
+}
+
+.Footer-link-social:hover {
+    cursor: pointer;
+    color: var(--accent-variant) !important;
+    transition: 0.15s;
 }

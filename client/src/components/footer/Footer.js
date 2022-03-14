@@ -3,6 +3,9 @@ import './Footer.css';
 
 const Footer = () => {
     const navigate = useNavigate();
+    const facebook = 'https://www.facebook.com/';
+    const linkedIn = 'https://www.linkedin.com/in/darin-deaton-5545581a/';
+    const instagram = 'https://www.instagram.com/';
 
     return (
         <div className="Footer">
@@ -10,6 +13,9 @@ const Footer = () => {
                 <div>
                     <p>
                         <a className="Footer-link-white" onClick={() => navigate('/')}>Home</a> | <a className="Footer-link-white" onClick={() => navigate('/about')}>About</a> | <a className="Footer-link-white" onClick={() => navigate('/get-started')}>Get Started</a> | <a className="Footer-link-white" onClick={() => navigate('/services')}>Services</a> | <a className="Footer-link-white" onClick={() => navigate('/testimonials')}>Testimonials</a> | <a className="Footer-link-white" onClick={() => navigate('/location')}>Location</a>
+                    </p>
+                    <p>
+                        Follow DPT on social media:&emsp;<a className="Footer-svg Footer-link-social" href={facebook} target="_blank" rel="noreferrer"><i className="fa fa-facebook-square" /></a>&emsp;<a className="Footer-svg Footer-link-social" href={linkedIn} target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square" /></a>&emsp;<a className="Footer-svg Footer-link-social" href={instagram} target="_blank" rel="noreferrer"><i className="fa fa-instagram" /></a>
                     </p>
                     <p><i className="fa fa-copyright" /> Copyright 2022 DPT Physical Therapy & Performance</p>
                 </div>
