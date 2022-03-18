@@ -56,10 +56,10 @@ const Home = () => {
     const navigate = useNavigate();
 
     const [banners, setBanners] = useState(window.innerWidth >= 768 ? horizontalBanners : verticalBanners);
-    const [photoRight, setPhotoRight] = useState(window.innerWidth >= 768 ? true : false);
+    const [photoRight, setPhotoRight] = useState(window.innerWidth > 768 ? true : false);
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth >= 768) {
+        if (window.innerWidth > 768) {
             if (JSON.stringify(banners) === JSON.stringify(verticalBanners)) setBanners(horizontalBanners);
             if (!photoRight) setPhotoRight(true);
         } else {

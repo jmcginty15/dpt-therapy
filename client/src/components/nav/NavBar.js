@@ -65,14 +65,14 @@ const NavBar = () => {
 
     return (
         <div className="NavBar">
-            <Navbar id="Nav" style={{ backgroundColor: backgroundColor }} light={backgroundColor === '#ffffff'} dark={backgroundColor !== '#ffffff'} expand="md" fixed="top">
+            <Navbar id="Nav" expand="lg" style={{ backgroundColor: backgroundColor }} light={backgroundColor === '#ffffff'} dark={backgroundColor !== '#ffffff'} fixed="top">
                 <NavbarBrand href="/" id="brand-logo-container">
                     <img src={logo} height={75} />
                     {/* <NavLogo id="brand-logo" width={150} height={150} style={{ color: textColor }} /> */}
                 </NavbarBrand>
                 <NavbarToggler onClick={toggleOpen} />
                 <Collapse isOpen={open} navbar>
-                    <Nav className="ms-auto" navbar>
+                    <Nav navbar>
                         <NavItem className="NavBar-item">
                             <NavLink onClick={() => navigate('/about', false)} style={{ color: textColor }}><span className="NavBar-link">ABOUT</span></NavLink>
                         </NavItem>

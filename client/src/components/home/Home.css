@@ -87,7 +87,7 @@
 
 @media (max-width: 768px) {
     .Home-about, .Home-info {
-        width: 90%;
+        width: 95%;
     }
 
     .Home-info {
@@ -148,6 +148,12 @@
 @media (max-height: 720px) {
     .Home-banner {
         height: 100vh;
+    }
+}
+
+@media (max-width: 285px) {
+    .Home-title {
+        font-size: 40px;
     }
 }
 
