@@ -7,9 +7,11 @@ import { useNavigate } from 'react-router';
 import bannerHorizontal1 from './images/banner-horizontal-1.jpg';
 import bannerHorizontal2 from './images/banner-horizontal-2.jpg';
 import bannerHorizontal3 from './images/banner-horizontal-3.jpg';
+import bannerHorizontal4 from './images/banner-horizontal-4.jpg';
 import bannerVertical1 from './images/banner-vertical-1.jpg';
 import bannerVertical2 from './images/banner-vertical-2.jpg';
 import bannerVertical3 from './images/banner-vertical-3.jpg';
+import bannerVertical4 from './images/banner-vertical-4.jpg';
 import bicycle from './images/bicycle.jpg';
 import family from './images/family.jpg';
 import football from './images/football.jpg';
@@ -23,14 +25,19 @@ const horizontalBanners = [
         fontColor: 'black'
     },
     {
-        photo: bannerHorizontal2,
-        caption: 'DOING WHAT YOU LOVE',
+        photo: bannerHorizontal3,
+        caption: 'BACK TO WORK',
         fontColor: 'white'
     },
     {
-        photo: bannerHorizontal3,
-        caption: 'GETTING BACK TO WORK',
-        fontColor: 'var(--accent)'
+        photo: bannerHorizontal4,
+        caption: 'BACK TO LIFE',
+        fontColor: 'white'
+    },
+    {
+        photo: bannerHorizontal2,
+        caption: 'BACK TO SPORTS',
+        fontColor: 'white'
     }
 ];
 
@@ -38,18 +45,23 @@ const verticalBanners = [
     {
         photo: bannerVertical1,
         caption: 'GETTING YOU BACK',
-        fontColor: 'var(--accent)'
-    },
-    {
-        photo: bannerVertical2,
-        caption: 'DOING WHAT YOU LOVE',
         fontColor: 'white'
     },
     {
         photo: bannerVertical3,
-        caption: 'GETTING BACK TO WORK',
+        caption: 'BACK TO WORK',
         fontColor: 'black'
-    }
+    },
+    {
+        photo: bannerVertical4,
+        caption: 'BACK TO LIFE',
+        fontColor: 'black'
+    },
+    {
+        photo: bannerVertical2,
+        caption: 'BACK TO SPORTS',
+        fontColor: 'white'
+    },
 ]
 
 const Home = () => {
@@ -134,6 +146,7 @@ const Home = () => {
                     <div className="Home-image-overlay-right" />
                 </div>}
             </div>
+            <button id="back-to-top" onClick={() => window.scrollTo(0, 0)}><i className="fa fa-arrow-up" /></button>
             <Resources />
             <Footer />
         </div>

@@ -77,7 +77,7 @@
     }
 
     .Home-image-overlay-left {
-        background: linear-gradient(to right, #00000033 70%, var(--accent));
+        background: linear-gradient(to right, #00000033 70%, var(--grey-3));
     }
 
     .Home-image-overlay-right {
@@ -113,7 +113,7 @@
     }
 
     .Home-image-overlay-left {
-        background: linear-gradient(to bottom, #00000033, var(--accent));
+        background: linear-gradient(to bottom, #00000033, var(--grey-3));
     }
 
     .Home-image-overlay-right {
@@ -148,6 +148,7 @@
 @media (max-height: 720px) {
     .Home-banner {
         height: 100vh;
+        margin: auto;
     }
 }
 
@@ -235,11 +236,11 @@
 }
 
 .Home-button-get-started {
-    background-color: black;
+    background-color: var(--accent);
 }
 
 .Home-button-get-started:hover {
-    background-color: var(--grey-3);
+    background-color: var(--accent-variant);
     transition: 0.15s;
 }
 
@@ -249,7 +250,7 @@
 
 .Home-get-started, .Home-testimonials {
     display: grid;
-    background-color: var(--accent);
+    background-color: var(--grey-3);
 }
 
 .Home-services, .Home-location {
@@ -265,10 +266,31 @@
 
 .Home-get-started-text, .Home-services-text {
     padding: 2rem;
-    color: #c8c8c8;
+    color: white;
 }
 
 .Home-image-overlay-left, .Home-image-overlay-right {
     height: 100%;
     width: 100%;
+}
+
+#back-to-top {
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-size: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff44;
+    color: #000000cc;
+    z-index: 5;
+    box-shadow: 2px 2px 2px #000000cc, -2px -2px 2px #000000cc, 2px -2px 2px #000000cc, -2px 2px 2px #000000cc;
+}
+
+#back-to-top:hover {
+    background-color: #ffffffaa;
+    color: #000000;
+    box-shadow: 2px 2px 2px #000000, -2px -2px 2px #000000, 2px -2px 2px #000000, -2px 2px 2px #000000;
+    transition: 0.15s;
 }

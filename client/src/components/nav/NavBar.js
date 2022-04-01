@@ -11,8 +11,8 @@ import { useState, useEffect } from 'react';
 // import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
 import logo from '../../assets/DPT_therapy_v4-03.png';
-import { ReactComponent as NavLogoHorizontal } from '../../assets/svg-logo.svg';
-import { ReactComponent as NavLogoVertical } from '../../assets/vertical-logo.svg';
+import { ReactComponent as NavLogoHorizontal } from '../../assets/logo-horizontal.svg';
+import { ReactComponent as NavLogoVertical } from '../../assets/logo-vertical.svg';
 import _ from 'lodash';
 import './NavBar.css';
 
@@ -30,45 +30,44 @@ const NavBar = () => {
 
     const [open, setOpen] = useState(false);
     const toggleOpen = () => setOpen(!open);
-    useEffect(() => {
-        if (open) {
-            if (backgroundColor !== '#ffffff') setBackgroundColor('#ffffff');
-            if (textColor !== 'var(--accent)') setTextColor('var(--accent)');
-        } else setNavBarColor();
-    }, [open]);
+    // useEffect(() => {
+    //     if (open) {
+    //         if (backgroundColor !== '#ffffff') setBackgroundColor('#ffffff');
+    //         if (textColor !== 'var(--accent)') setTextColor('var(--accent)');
+    //     } else setNavBarColor();
+    // }, [open]);
 
     const [backgroundColor, setBackgroundColor] = useState('#ffffff00');
     const [textColor, setTextColor] = useState('white');
 
-    const setNavBarColor = () => {
-        const pos = window.scrollY;
-        let newBackground = '#ffffff';
-        let newText = 'var(--accent)';
+    // const setNavBarColor = () => {
+    //     const pos = window.scrollY;
+    //     let newBackground = '#ffffff';
+    //     let newText = 'var(--accent)';
 
-        if (open) {
-            newBackground = '#ffffff';
-            newText = 'var(--accent)';
-        } else if (pos < 150) {
-            let opacity = Math.round(pos / 150 * 255).toString(16);
-            if (opacity.length < 2) opacity = `0${opacity}`;
-            newBackground = `#ffffff${opacity}`;
+    //     if (open) {
+    //         newBackground = '#ffffff';
+    //         newText = 'var(--accent)';
+    //     } else if (pos < 150) {
+    //         let opacity = Math.round(pos / 150 * 255).toString(16);
+    //         if (opacity.length < 2) opacity = `0${opacity}`;
+    //         newBackground = `#ffffff${opacity}`;
 
-            if (pos === 0) newText = 'white';
-            else newText = 'var(--accent)';
-        }
+    //         if (pos === 0) newText = 'white';
+    //         else newText = 'var(--accent)';
+    //     }
 
-        if (backgroundColor !== newBackground) setBackgroundColor(newBackground);
-        if (textColor !== newText) setTextColor(newText);
-    }
+    //     if (backgroundColor !== newBackground) setBackgroundColor(newBackground);
+    //     if (textColor !== newText) setTextColor(newText);
+    // }
 
-    window.addEventListener('scroll', setNavBarColor);
+    // window.addEventListener('scroll', setNavBarColor);
 
     return (
         <div className="NavBar">
-            <Navbar id="Nav" style={{ backgroundColor: backgroundColor }} light={backgroundColor === '#ffffff'} dark={backgroundColor !== '#ffffff'} expand="lg" fixed="top">
+            <Navbar id="Nav" light={backgroundColor === '#ffffff'} dark={backgroundColor !== '#ffffff'} expand="lg" fixed="top">
                 <NavbarBrand href="/" id="brand-logo-container">
-                    <img src={logo} height={75} />
-                    {/* <NavLogo id="brand-logo" width={150} height={150} style={{ color: textColor }} /> */}
+                    <NavLogo id="brand-logo" height={75} />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggleOpen} />
                 <Collapse isOpen={open} navbar>
