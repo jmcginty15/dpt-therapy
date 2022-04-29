@@ -81,6 +81,11 @@ const Home = () => {
     return (
         <div className="Home">
             <div className="Home-banner">
+                {photoRight && <div className="Home-about">
+                    <h1 className="Home-title">DPT PHYSICAL THERAPY & PERFORMANCE</h1>
+                    <p className="Home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
+                    <button className="Home-button Home-button-about" type="button">LEARN MORE&ensp;<i className="fa fa-angle-right" /></button>
+                </div>}
                 <Carousel className="Home-carousel" pause={false} controls={false}>
                     {banners.map(banner => (
                         <Carousel.Item className="Home-carousel-item" interval={3000} key={banner.photo}>
@@ -92,11 +97,11 @@ const Home = () => {
                         </Carousel.Item>
                     ))}
                 </Carousel>
-            </div>
-            <div className="Home-about">
-                <h1 className="Home-title">DPT PHYSICAL THERAPY & PERFORMANCE</h1>
-                <p className="Home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
-                <button className="Home-button Home-button-about" type="button">LEARN MORE&ensp;<i className="fa fa-angle-right" /></button>
+                {!photoRight && <div className="Home-about">
+                    <h1 className="Home-title">DPT PHYSICAL THERAPY & PERFORMANCE</h1>
+                    <p className="Home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
+                    <button className="Home-button Home-button-about" type="button">LEARN MORE&ensp;<i className="fa fa-angle-right" /></button>
+                </div>}
             </div>
             <div className="Home-get-started">
                 <div className="Home-image" style={{ backgroundImage: `url(${bicycle})` }}>
