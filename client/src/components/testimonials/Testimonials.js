@@ -76,9 +76,9 @@ const Testimonials = () => {
                 {!photoRight && <div className="Testimonials-photo" style={{ backgroundImage: `url(${testimonialsPhoto})` }}>
                     <div className="Testimonials-image-overlay-left" />
                 </div>}
-                <Carousel className="Testimonials-carousel" pause={false} controls={false}>
+                <Carousel className="Testimonials-carousel" pause="hover" controls={false}>
                     {testimonials.filter(testimonial => testimonial.featured).map(testimonial => (
-                        <Carousel.Item className="Testimonials-carousel-item" interval={10000} key={testimonial.photo}>
+                        <Carousel.Item className="Testimonials-carousel-item" interval={3000} key={testimonial.photo}>
                             <div className="Testimonials-customer">
                                 <CustomerPhoto photo={testimonial.photo} />
                                 <div className="Testimonials-name">{testimonial.name.toUpperCase()}</div>
