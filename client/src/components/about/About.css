@@ -1,0 +1,116 @@
+.About {
+    overflow-y: auto;
+}
+
+.About-content {
+    background-color: var(--grey-3);
+    display: grid;
+}
+
+.About-photo {
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.About-text {
+    padding: 2rem;
+    color: white;
+}
+
+.About-title {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.About-text-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.About-image-overlay-left {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #00000033 40%, var(--grey-3));
+}
+
+@media (min-width: 1000px) {
+    .About-photo {
+        height: 100%;
+    }
+
+    .About-content {
+        grid-template-columns: 60% 40%;
+    }
+
+    .About-image-overlay-left {
+        background: linear-gradient(to right, #00000033 40%, var(--grey-3));
+    }
+
+    .About-staff-grid {
+        width: 70%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        row-gap: 4rem;
+        column-gap: 4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .About-staff-grid {
+        width: 70%;
+        grid-template-columns: 25% 25% 25% 25%;
+        row-gap: 3rem;
+        column-gap: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .About-staff-grid {
+        width: 80%;
+        grid-template-columns: 33.333% 33.333% 33.333%;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .About-staff-grid {
+        width: 80%;
+        grid-template-columns: 50% 50%;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .About-staff-grid {
+        width: 80%;
+        grid-template-columns: 100%;
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .About-photo {
+        height: 400px;
+    }
+
+    .About-content {
+        grid-template-columns: 100%;
+    }
+
+    .About-image-overlay-left {
+        background: linear-gradient(to bottom, #00000033 40%, var(--grey-3));
+    }
+}
+
+.About-staff {
+    color: white;
+    margin-top: 2rem;
+}
+
+.About-staff-grid {
+    margin: 2rem auto 2rem auto;
+    display: grid;
+    justify-content: center;
+}

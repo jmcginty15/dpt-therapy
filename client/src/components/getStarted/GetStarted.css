@@ -1,0 +1,133 @@
+.GetStarted-content {
+    background-color: var(--grey-3);
+    display: grid;
+}
+
+.GetStarted-photo {
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.GetStarted-text {
+    padding: 2rem;
+    color: white;
+}
+
+.GetStarted-title {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.GetStarted-subtitle {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+}
+
+.GetStarted-text-content {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.GetStarted-image-overlay-left {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left, #00000033 40%, var(--grey-3));
+}
+
+.GetStarted-info {
+    display: grid;
+    color: white;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 50px;
+}
+
+.GetStarted-info-content {
+    margin: 0 1rem;
+}
+
+.GetStarted-li {
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .GetStarted-info {
+        grid-template-columns: 40% 60%;
+    }
+
+    .GetStarted-photo {
+        height: 100%;
+    }
+
+    .GetStarted-content {
+        grid-template-columns: 40% 60%;
+    }
+
+    .GetStarted-image-overlay-left {
+        background: linear-gradient(to left, #00000033 40%, var(--grey-3));
+    }
+}
+
+@media (max-width: 768px) {
+    .GetStarted-info {
+        grid-template-columns: 100%;
+    }
+
+    .GetStarted-info {
+        width: 95%;
+    }
+
+    .GetStarted-photo {
+        height: 400px;
+    }
+
+    .GetStarted-content {
+        grid-template-columns: 100%;
+    }
+
+    .GetStarted-image-overlay-left {
+        background: linear-gradient(to bottom, #00000033 40%, var(--grey-3));
+    }
+}
+
+.GetStarted-ul {
+    text-align: left;
+}
+
+.GetStarted-link {
+    color: white;
+    border-radius: 5px;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+.GetStarted-link:hover {
+    color: var(--accent-variant);
+    cursor: pointer;
+    transition: 0.25s;
+    background-color: white;
+}
+
+.GetStarted-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid white 1px;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.GetStarted-button-about {
+    background-color: var(--accent);
+}
+
+.GetStarted-button-about:hover {
+    background-color: var(--accent-variant);
+    transition: 0.15s;
+}

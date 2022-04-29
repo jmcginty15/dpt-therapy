@@ -1,0 +1,40 @@
+.StaffCard {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--grey-3);
+    text-align: left;
+    box-shadow: 5px 5px 5px var(--grey-3), 5px -2px 5px var(--grey-3), -2px 5px 5px var(--grey-3);
+}
+
+.StaffCard-photo {
+    width: 100%;
+    aspect-ratio: 6/5;
+    background-size: cover;
+    background-position: center;
+}
+
+.StaffCard-photo-overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #00000033 40%, var(--grey-3));
+}
+
+.StaffCard-text {
+    padding: 0.5rem;
+}
+
+.StaffCard-name {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+}
+
+.StaffCard-link:hover {
+    cursor: pointer;
+    color: var(--accent);
+    transition: 0.15s;
+}
+
+.StaffCard-title {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}

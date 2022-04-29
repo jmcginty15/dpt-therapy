@@ -1,7 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Map from '../map/Map';
-import Resources from '../footer/Resources';
-import Footer from '../footer/Footer';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import bannerHorizontal1 from './images/banner-horizontal-1.jpg';
@@ -68,7 +66,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const [banners, setBanners] = useState(window.innerWidth >= 768 ? horizontalBanners : verticalBanners);
-    const [photoRight, setPhotoRight] = useState(window.innerWidth > 768 ? true : false);
+    const [photoRight, setPhotoRight] = useState(window.innerWidth > 768);
 
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768) {
@@ -146,9 +144,6 @@ const Home = () => {
                     <div className="Home-image-overlay-right" />
                 </div>}
             </div>
-            <button id="back-to-top" onClick={() => window.scrollTo(0, 0)}><i className="fa fa-arrow-up" /></button>
-            <Resources />
-            <Footer />
         </div>
     )
 }
