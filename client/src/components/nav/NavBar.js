@@ -84,9 +84,9 @@ const NavBar = () => {
                         <NavItem className="NavBar-item">
                             <NavLink onClick={() => navigate('/testimonials', false)} style={{ color: textColor }}><span className="NavBar-link">TESTIMONIALS</span></NavLink>
                         </NavItem>
-                        {/* <NavItem className="NavBar-item">
+                        <NavItem className="NavBar-item">
                             <NavLink onClick={() => navigate('/location', false)} style={{ color: textColor }}><span className="NavBar-link">LOCATION</span></NavLink>
-                        </NavItem> */}
+                        </NavItem>
                         <NavItem className="NavBar-item">
                             <NavLink onClick={() => window.open(payPortal, '_blank')}><span className="NavBar-link-button"><i className="fa fa-credit-card" /> PAY ACCOUNT</span></NavLink>
                         </NavItem>

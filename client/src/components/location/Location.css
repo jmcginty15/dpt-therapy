@@ -1,0 +1,53 @@
+.Location {
+    display: grid;
+    background-color: var(--grey-1);
+}
+
+.Location-image {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.Location-image-overlay {
+    height: 100%;
+    width: 100%;
+}
+
+.Location-text {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .Location {
+        grid-template-columns: 45% 55%;
+    }
+
+    .Location-image {
+        height: 100%;
+    }
+
+    .Location-image-overlay {
+        background: linear-gradient(to right, #00000033 70%, var(--grey-1));
+    }
+}
+
+@media (max-width: 768px) {
+    .Location {
+        grid-template-columns: 100%;
+    }
+
+    .Location-image {
+        height: 400px;
+    }
+
+    .Location-image-overlay {
+        background: linear-gradient(to bottom, #00000033, var(--grey-1));
+    }
+
+    .Location-text {
+        padding-top: 2rem;
+    }
+}

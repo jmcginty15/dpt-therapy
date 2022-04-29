@@ -6,6 +6,7 @@ import About from './components/about/About';
 import Staff from './components/about/Staff';
 import GetStarted from './components/getStarted/GetStarted';
 import Testimonials from './components/testimonials/Testimonials';
+import Location from './components/location/Location';
 import BackToTop from './components/BackToTop';
 import Resources from './components/footer/Resources';
 import Footer from './components/footer/Footer';
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/about/:staffId" element={<Staff />} />
         <Route exact path="/get-started" element={<GetStarted />} />
         <Route exact path="/testimonials" element={<Testimonials />} />
+        <Route exact path="/location" element={<Location />} />
         <Route path={'*'} element={<Navigate to="/" />} />
       </Routes>
       <BackToTop />
