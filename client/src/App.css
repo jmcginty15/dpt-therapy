@@ -9,11 +9,13 @@
   --grey-1: #505050;
   --grey-2: #909090;
   --grey-3: #303030;
+  --grey-4: #c0c0c0;
+  --grey-5: #222222;
 }
 
 .App {
   text-align: center;
-  background-color: black;
+  background-color: var(--grey-4);
 }
 
 .App-logo {

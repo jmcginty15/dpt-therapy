@@ -1,11 +1,11 @@
 import Map from '../map/Map';
-import stephenville from '../home/images/stephenville.jpg';
+import weightroom from '../home/images/weightroom.jpg';
 import './Location.css';
 
 const Location = () => {
     return (
         <div className="Location">
-            <div className="Location-image" style={{ backgroundImage: `url(${stephenville})` }}>
+            <div className="Location-image" style={{ backgroundImage: `url(${weightroom})` }}>
                 <div className="Location-image-overlay" />
             </div>
             <div>
@@ -15,10 +15,12 @@ const Location = () => {
                     containerElement={<div className="Map" />}
                     mapElement={<div style={{ height: `100%` }} />} />
                 <div className="Location-text">
-                    1234 Somewhere St<br />
-                    Stephenville, TX 12345<br />
-                    (254) 123-4567<br />
-                    dpttherapy@gmail.com
+                    2900 West Washington St / US 377<br />
+                    Suite 74A<br />
+                    Stephenville, TX 76401<br />
+                    Phone: (254) 431-5100<br />
+                    Fax: (254) 459-4862<br />
+                    <a className="Footer-link-white" href="mailto:dpttherapyandperformance@gmail.com">dpttherapyandperformance@gmail.com</a>
                 </div>
             </div>
         </div>

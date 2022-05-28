@@ -19,8 +19,8 @@ const GetStarted = () => {
                 </div>}
                 <div className="GetStarted-text">
                     <h1 className="GetStarted-title">GET STARTED</h1>
-                    <h3 className="GetStarted-subtitle">Things you should know before your first therapy visit:</h3>
-                    <p className="GetStarted-text-content">Physical Therapists have "limited direct access" in the state of Texas. We can evaluate, but not treat without a referral from a physician, so we recommend that you obtain a prescription for therapy from another provider before starting therapy so that we can get to work on your first visit. A prescription for therapy need only have:</p>
+                    <h3 className="GetStarted-subtitle">THINGS YOU SHOULD KNOW BEFORE YOUR FIRST THERAPY VISIT:</h3>
+                    <p className="GetStarted-text-content">Physical Therapists have "direct access" in the state of Texas. We can evaluate and treat for 10-15 calendar days without a referral from a physician. There are some conditions that might require our staff to treat you beyond that timeline. In those cases, we will assist you in accessing a local physician/provider who can best meet your medical needs and write a prescription for physical therapy. A prescription for therapy need only have:</p>
                     <ul className="GetStarted-ul GetStarted-text-content">
                         <li className="GetStarted-li">A diagnosis</li>
                         <li className="GetStarted-li">"Evaluate and Treat"</li>

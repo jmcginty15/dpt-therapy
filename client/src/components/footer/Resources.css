@@ -1,11 +1,26 @@
 .Resources {
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.Resources-shade {
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(#00000000, #000000ff);
+}
+
+.Resources-container {
+    padding: 1rem;
+    margin: auto;
+    width: 65%;
+    background-color: #ffffff66;
 }
 
 .Resources-title {
     font-family: 'PT Sans Narrow', sans-serif;
-    color: #c8c8c8;
+    color: black;
+    font-weight: bold;
 }
 
 .Resources-grid {
@@ -14,30 +29,36 @@
 }
 
 @media (min-width: 768px) {
-    .Resources {
+    .Resources-shade {
         padding: 50px;
     }
 
+    .Resources-container {
+        width: 65%;
+    }
+
     .Resources-grid {
-        width: 60%;
         grid-template-columns: 50% 50%;
     }
 }
 
 @media (max-width: 768px) {
-    .Resources {
+    .Resources-shade {
         padding: 15px;
     }
 
-    .Resources-grid {
+    .Resources-container {
         width: 90%;
+    }
+
+    .Resources-grid {
         grid-template-columns: 100%;
     }
 }
 
 .Resources-link {
-    color: #c8c8c8;
-    text-decoration: none;
+    color: black;
+    font-weight: bold;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }

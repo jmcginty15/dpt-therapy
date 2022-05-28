@@ -21,10 +21,12 @@ const Footer = () => {
                 </div>
                 <div className="Footer-right">
                     <h5>DPT Physical Therapy & Performance</h5>
-                    1234 Somewhere St<br />
-                    Stephenville, TX 12345<br />
-                    (254) 123-4567<br />
-                    dpttherapy@gmail.com
+                    2900 West Washington St / US 377<br />
+                    Suite 74A<br />
+                    Stephenville, TX 76401<br />
+                    Phone: (254) 431-5100<br />
+                    Fax: (254) 459-4862<br />
+                    <a className="Footer-link-white" href="mailto:dpttherapyandperformance@gmail.com">dpttherapyandperformance@gmail.com</a>
                 </div>
             </div>
             <div className="Footer-tag">

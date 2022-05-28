@@ -13,7 +13,7 @@ import bannerVertical4 from './images/banner-vertical-4.jpg';
 import bicycle from './images/bicycle.jpg';
 import family from './images/family.jpg';
 import football from './images/football.jpg';
-import stephenville from './images/stephenville.jpg';
+import cardio from './images/cardio.jpg';
 import './Home.css';
 
 const horizontalBanners = [
@@ -82,9 +82,10 @@ const Home = () => {
         <div className="Home">
             <div className="Home-banner">
                 {photoRight && <div className="Home-about">
-                    <h1 className="Home-title">DPT PHYSICAL THERAPY & PERFORMANCE</h1>
-                    <p className="Home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
-                    <button className="Home-button Home-button-about" type="button">LEARN MORE&ensp;<i className="fa fa-angle-right" /></button>
+                    <div>
+                        <p className="Home-about-text">Welcome to DPT Therapy & Performance, a rehabilitation group! Let our Doctors of Physical Therapy design a specialized treatment plan tailored to your personal care. Our staff is dedicated to patient focused service, where we don't just meet, but strive to exceed your expectations. The success of our patients is how we measure the success of our group! Let our Doctors of PT "get you back to LIFE!"</p>
+                        <button className="Home-button Home-button-about" onClick={() => navigate('/about')}>LEARN MORE&ensp;<i className="fa fa-angle-right" /></button>
+                    </div>
                 </div>}
                 <Carousel className="Home-carousel" pause={false} controls={false}>
                     {banners.map(banner => (
@@ -98,9 +99,10 @@ const Home = () => {
                     ))}
                 </Carousel>
                 {!photoRight && <div className="Home-about">
-                    <h1 className="Home-title">DPT PHYSICAL THERAPY & PERFORMANCE</h1>
-                    <p className="Home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
-                    <button className="Home-button Home-button-about" type="button">LEARN MORE&ensp;<i className="fa fa-angle-right" /></button>
+                    <div>
+                        <p className="Home-about-text">Welcome to DPT Therapy & Performance, a rehabilitation group! Let our Doctors of Physical Therapy design a specialized treatment plan tailored to your personal care. Our staff is dedicated to patient focused service, where we don't just meet, but strive to exceed your expectations. The success of our patients is how we measure the success of our group! Let our Doctors of PT "get you back to LIFE!"</p>
+                        <button className="Home-button Home-button-about" onClick={() => navigate('/about')}>LEARN MORE&ensp;<i className="fa fa-angle-right" /></button>
+                    </div>
                 </div>}
             </div>
             <div className="Home-get-started">
@@ -108,9 +110,11 @@ const Home = () => {
                     <div className="Home-image-overlay-left" />
                 </div>
                 <div className="Home-get-started-text">
-                    <h1 className="Home-title">GET STARTED</h1>
-                    <p className="Home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
-                    <button className="Home-button Home-button-get-started" onClick={() => navigate('/get-started')}>LEARN HOW TO GET STARTED&ensp;<i className="fa fa-angle-right" /></button>
+                    <div className="Home-container">
+                        <h1 className="Home-title">GET STARTED</h1>
+                        <p className="Home-about-text">Take the next step to getting started and "Getting Back to Life"</p>
+                        <button className="Home-button Home-button-get-started" onClick={() => navigate('/get-started')}>LEARN HOW TO GET STARTED&ensp;<i className="fa fa-angle-right" /></button>
+                    </div>
                 </div>
             </div>
             <div className="Home-services">
@@ -118,9 +122,11 @@ const Home = () => {
                     <div className="Home-image-overlay-right" />
                 </div>}
                 <div className="Home-services-text">
-                    <h1 className="Home-title">SERVICES</h1>
-                    <p className="Home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
-                    <button className="Home-button Home-button-about" onClick={() => navigate('/services')}>LEARN MORE ABOUT OUR SERVICES&ensp;<i className="fa fa-angle-right" /></button>
+                    <div className="Home-container">
+                        <h1 className="Home-title">SERVICES</h1>
+                        <p className="Home-about-text">At our clinics, the goal is to "get you back to life!" Our Doctors of PT help you move beyond your current condition/injury so you can take your health, sports performance and fitness to a higher level. Our staff has a broad skill set of interventions/services that are state of the art, evidence based, and tailored to your specific needs.</p>
+                        <button className="Home-button Home-button-about" onClick={() => navigate('/services')}>LEARN MORE ABOUT OUR SERVICES&ensp;<i className="fa fa-angle-right" /></button>
+                    </div>
                 </div>
                 {photoRight && <div className="Home-image" style={{ backgroundImage: `url(${family})` }}>
                     <div className="Home-image-overlay-right" />
@@ -131,13 +137,15 @@ const Home = () => {
                     <div className="Home-image-overlay-left" />
                 </div>
                 <div className="Home-get-started-text">
-                    <h1 className="Home-title">TESTIMONIALS</h1>
-                    <p className="Home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
-                    <button className="Home-button Home-button-get-started" onClick={() => navigate('/testimonials')}>HEAR FROM SOME OF OUR SATISFIED CUSTOMERS&ensp;<i className="fa fa-angle-right" /></button>
+                    <div className="Home-container">
+                        <h1 className="Home-title">TESTIMONIALS</h1>
+                        <p className="Home-about-text">Find out what our patients are saying about their experiences at DPT Therapy & Performance!</p>
+                        <button className="Home-button Home-button-get-started" onClick={() => navigate('/testimonials')}>HEAR FROM SOME OF OUR SATISFIED CUSTOMERS&ensp;<i className="fa fa-angle-right" /></button>
+                    </div>
                 </div>
             </div>
             <div className="Home-location">
-                {!photoRight && <div className="Home-image" style={{ backgroundImage: `url(${stephenville})` }}>
+                {!photoRight && <div className="Home-image" style={{ backgroundImage: `url(${cardio})` }}>
                     <div className="Home-image-overlay-right" />
                 </div>}
                 <Map
@@ -145,7 +153,7 @@ const Home = () => {
                     loadingElement={<div style={{ height: `100%` }} />}
                     containerElement={<div className="Map" />}
                     mapElement={<div style={{ height: `100%` }} />} />
-                {photoRight && <div className="Home-image" style={{ backgroundImage: `url(${stephenville})` }}>
+                {photoRight && <div className="Home-image" style={{ backgroundImage: `url(${cardio})` }}>
                     <div className="Home-image-overlay-right" />
                 </div>}
             </div>

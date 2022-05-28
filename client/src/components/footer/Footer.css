@@ -2,9 +2,9 @@
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     text-align: left;
-    background-color: var(--grey-2);
+    background-color: var(--grey-5);
     color: var(--accent);
-    border-top: solid #c8c8c8 2px;
+    border-top: solid var(--accent) 2px;
 }
 
 .Footer-container {

@@ -1,5 +1,4 @@
 import StaffCard from './StaffCard';
-import BackToTop from '../BackToTop';
 import aboutPhoto from '../../assets/Re__Website_development_for_DPT/DrD-Explaining-Injury.jpg';
 import chadYes from '../../assets/chad-yes.jpg';
 import './About.css';
@@ -68,7 +67,14 @@ const About = () => {
                 </div>
                 <div className="About-text">
                     <h1 className="About-title">ABOUT DPT</h1>
-                    <p className="About-text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in. Risus in hendrerit gravida rutrum quisque non tellus. Feugiat in fermentum posuere urna nec tincidunt. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tortor consequat id porta nibh. Sed nisi lacus sed viverra tellus in hac. Viverra mauris in aliquam sem fringilla ut. Egestas sed tempus urna et pharetra pharetra massa massa. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Commodo ullamcorper a lacus vestibulum sed arcu. Tempor nec feugiat nisl pretium fusce id. Et malesuada fames ac turpis. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
+                    <p className="About-text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo. In pellentesque massa placerat duis ultricies lacus. Lectus nulla at volutpat diam ut venenatis tellus in.</p>
+                    <h3 className="About-subtitle">OUR CORE VALUES:</h3>
+                    <ul className="About-ul About-text-content">
+                        <li className="About-li">Compassion — All people deserve to receive care in a loving and accepting environment.</li>
+                        <li className="About-li">Excellence — All interventions are based on the value of the patient, experience of the staff, and research/technology.</li>
+                        <li className="About-li">Integriy — All interventions are provided in an honest and "always do the right thing" setting.</li>
+                        <li className="About-li">Diligence — All interactions are built on hard work and a strong work ethic.</li>
+                    </ul>
                 </div>
             </div>
             <div className="About-staff">

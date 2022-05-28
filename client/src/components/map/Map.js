@@ -9,11 +9,12 @@ import './Map.css';
 //     zoom: 11
 // };
 
+const coordinates = { lat: 32.20149, lng: -98.2451 };
 
 const Map = (props) =>
-    <GoogleMap defaultCenter={{ lat: 32.2170021, lng: -98.208011 }} defaultZoom={13}>
+    <GoogleMap defaultCenter={coordinates} defaultZoom={13}>
         <Marker
-            position={{ lat: 32.2170021, lng: -98.208011 }}
+            position={coordinates}
             title="DPT Therapy"
         />
     </GoogleMap>
