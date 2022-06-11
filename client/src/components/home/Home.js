@@ -140,7 +140,7 @@ const Home = () => {
                     <div className="Home-container">
                         <h1 className="Home-title">PATIENT EXPERIENCES</h1>
                         <p className="Home-about-text">Find out what our patients are saying about their experiences at DPT Physical Therapy & Performance!</p>
-                        <button className="Home-button Home-button-get-started" onClick={() => navigate('/testimonials')}>HEAR FROM SOME OF OUR SATISFIED PATIENTS&ensp;<i className="fa fa-angle-right" /></button>
+                        <button className="Home-button Home-button-get-started" onClick={() => navigate('/patient-experiences')}>HEAR FROM SOME OF OUR SATISFIED PATIENTS&ensp;<i className="fa fa-angle-right" /></button>
                     </div>
                 </div>
             </div>
