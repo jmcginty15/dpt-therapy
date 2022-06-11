@@ -35,7 +35,6 @@
 }
 
 .About-image-overlay-left {
-    height: 100%;
     width: 100%;
     background: linear-gradient(to right, #00000033 40%, var(--grey-6));
 }
@@ -51,12 +50,13 @@
 
     .About-image-overlay-left {
         background: linear-gradient(to right, #00000033 40%, var(--grey-6));
+        height: 100%;
     }
 }
 
 @media (max-width: 1000px) {
     .About-photo {
-        aspect-ratio: 7/5;
+        height: fit-content;
     }
 
     .About-content {
@@ -65,6 +65,8 @@
 
     .About-image-overlay-left {
         background: linear-gradient(to bottom, #00000033 40%, var(--grey-6));
+        height: 0;
+        padding-bottom: 71.142857%;
     }
 }
 

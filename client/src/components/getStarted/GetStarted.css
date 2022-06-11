@@ -28,6 +28,7 @@
 .GetStarted-subtitle-bottom {
     margin-top: 3rem;
     font-size: 32pt;
+    max-width: 90%;
 }
 
 .GetStarted-text-content {
