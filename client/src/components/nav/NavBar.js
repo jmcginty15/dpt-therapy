@@ -11,22 +11,21 @@ import { useState, useEffect } from 'react';
 // import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
 import logo from '../../assets/DPT_therapy_v4-03.png';
-import { ReactComponent as NavLogoHorizontal } from '../../assets/logo-horizontal.svg';
-import { ReactComponent as NavLogoVertical } from '../../assets/logo-vertical.svg';
+import { ReactComponent as NavLogoWords } from '../../assets/logo-words.svg';
+import { ReactComponent as NavLogoHat } from '../../assets/logo-hat.svg';
 import _ from 'lodash';
 import './NavBar.css';
 
 // Navbar component
 const NavBar = () => {
     const navigate = useNavigate();
-    const [NavLogo, setNavLogo] = useState(window.innerWidth >= 768 ? NavLogoHorizontal : NavLogoVertical);
+    const [NavLogo, setNavLogo] = useState(window.innerWidth >= 768 ? NavLogoWords : NavLogoHat);
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth >= 768 && !_.isEqual(NavLogo, NavLogoHorizontal)) setNavLogo(NavLogoHorizontal);
-        else if (window.innerWidth < 768 && !_.isEqual(NavLogo, NavLogoVertical)) setNavLogo(NavLogoVertical);
+        if (window.innerWidth >= 768 && !_.isEqual(NavLogo, NavLogoWords)) setNavLogo(NavLogoWords);
+        else if (window.innerWidth < 768 && !_.isEqual(NavLogo, NavLogoHat)) setNavLogo(NavLogoHat);
     });
 
-    const payPortal = 'https://quickclick.com/r/1ukuh';
 
     const [open, setOpen] = useState(false);
     const toggleOpen = () => setOpen(!open);
@@ -67,6 +66,7 @@ const NavBar = () => {
         <div className="NavBar">
             <Navbar id="Nav" light={backgroundColor === '#ffffff'} dark={backgroundColor !== '#ffffff'} expand="lg" fixed="top">
                 <NavbarBrand href="/" id="brand-logo-container">
+                    {_.isEqual(NavLogo, NavLogoWords) && <NavLogoHat height={75} />}
                     <NavLogo id="brand-logo" height={75} />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggleOpen} />
@@ -82,13 +82,10 @@ const NavBar = () => {
                             <NavLink onClick={() => navigate('/services', false)} style={{ color: textColor }}><span className="NavBar-link">SERVICES</span></NavLink>
                         </NavItem>
                         <NavItem className="NavBar-item">
-                            <NavLink onClick={() => navigate('/testimonials', false)} style={{ color: textColor }}><span className="NavBar-link">TESTIMONIALS</span></NavLink>
+                            <NavLink onClick={() => navigate('/patient-experiences', false)} style={{ color: textColor }}><span className="NavBar-link">PATIENT EXPERIENCES</span></NavLink>
                         </NavItem>
                         <NavItem className="NavBar-item">
                             <NavLink onClick={() => navigate('/location', false)} style={{ color: textColor }}><span className="NavBar-link">LOCATION</span></NavLink>
-                        </NavItem>
-                        <NavItem className="NavBar-item">
-                            <NavLink onClick={() => window.open(payPortal, '_blank')}><span className="NavBar-link-button"><i className="fa fa-credit-card" /> PAY ACCOUNT</span></NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

@@ -1,29 +1,43 @@
 .StaffCard {
+    display: grid;
     width: 100%;
     height: fit-content;
-    background-color: var(--grey-3);
+    background-color: var(--grey-6);
     text-align: left;
     border-radius: 3px;
     color: white;
-    /* box-shadow: 5px 5px 5px var(--grey-3), 5px -2px 5px var(--grey-3), -2px 5px 5px var(--grey-3); */
+}
+
+@media (min-width: 768px) {
+    .StaffCard {
+        grid-template-columns: 30% 70%;
+    }
+
+    .StaffCard-photo {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .StaffCard {
+        grid-template-columns: 100%;
+    }
+
+    .StaffCard-photo {
+        margin: 1rem auto;
+    }
 }
 
 .StaffCard-photo {
     border-radius: 3px;
-    width: 100%;
-    aspect-ratio: 6/5;
+    width: 90%;
+    aspect-ratio: 4/5;
     background-size: cover;
     background-position: center;
 }
 
-.StaffCard-photo-overlay {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom, #00000033 40%, var(--grey-3));
-}
-
 .StaffCard-text {
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .StaffCard-name {
@@ -39,5 +53,9 @@
 
 .StaffCard-title {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
+}
+
+.StaffCard-bio {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem 0;
 }

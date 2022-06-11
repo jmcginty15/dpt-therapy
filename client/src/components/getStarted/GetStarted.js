@@ -31,15 +31,14 @@ const GetStarted = () => {
                     <div className="GetStarted-image-overlay-left" />
                 </div>}
             </div>
+            <h2 className="GetStarted-subtitle-bottom">THE DAY OF YOUR FIRST VISIT:</h2>
             <div className="GetStarted-info">
                 <div className="GetStarted-info-content">
-                    <h2 className="GetStarted-subtitle">THE DAY OF YOUR FIRST VISIT:</h2>
                     <p className="GetStarted-text-content">Our doctors of physical therapy and other staff are here to serve you. If you have any questions about your appointments, insurance, treatment, or anything else, please feel free to contact our staff at any time.</p>
-                    <button className="GetStarted-button GetStarted-button-about" type="button" onClick={() => window.open(newPatientPacket, '_blank')}>NEW PATIENT PACKET&ensp;<i className="fa fa-angle-right" /></button>
                 </div>
                 <div className="GetStarted-info-content">
                     <ul className="GetStarted-text-content">
-                        <li className="GetStarted-li">Print your <a className="GetStarted-link" href={newPatientPacket} target="_blank" rel="noreferrer">new patient paperwork</a> ahead of time to limit your time in the office before your interaction with your doctor of physical therapy. Our staff will email you the forms if you provide us an address.</li>
+                        <li className="GetStarted-li">If you have any special reports such as MRIs or surgical reports, please bring them with you so we can scan them for your patient portal. Also, arrive 10-15 min early to insure timely access to your appointment.</li>
                         <li className="GetStarted-li">Bring your insurance card and a form of picture identification to your visit. We will check your insurance benefits for you prior to your visit. We are able to accept cash, check, credit cards, and HSA <i>(healthcare savings account or flexible spending account)</i> cards for your deductible or copay. In addition, we are happy to discuss payment plans or our reasonable tiered self-pay rates.</li>
                         <li className="GetStarted-li">Wear or bring comfortable clothing (that exposes the injured area if possible). Our facilities have areas where you may change if needed.</li>
                         <li className="GetStarted-li">When you are issued a home exercise program, our staff will print a copy for your reference. Some patients prefer a more interactive version of the home exercise program, so feel free to bring your smartphone and we will video instructions for you.</li>

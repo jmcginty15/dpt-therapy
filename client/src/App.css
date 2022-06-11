@@ -6,11 +6,12 @@
   --accent: #522c82;
   --accent-variant: #2d1847;
 
-  --grey-1: #505050;
+  --grey-1: #c0c0c0;
   --grey-2: #909090;
-  --grey-3: #303030;
+  --grey-3: #868686;
   --grey-4: #c0c0c0;
   --grey-5: #222222;
+  --grey-6: #303030;
 }
 
 .App {

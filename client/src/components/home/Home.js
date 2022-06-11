@@ -48,7 +48,7 @@ const verticalBanners = [
     {
         photo: bannerVertical3,
         caption: 'BACK TO WORK',
-        fontColor: 'black'
+        fontColor: 'white'
     },
     {
         photo: bannerVertical4,
@@ -83,7 +83,7 @@ const Home = () => {
             <div className="Home-banner">
                 {photoRight && <div className="Home-about">
                     <div>
-                        <p className="Home-about-text">Welcome to DPT Therapy & Performance, a rehabilitation group! Let our Doctors of Physical Therapy design a specialized treatment plan tailored to your personal care. Our staff is dedicated to patient focused service, where we don't just meet, but strive to exceed your expectations. The success of our patients is how we measure the success of our group! Let our Doctors of PT "get you back to LIFE!"</p>
+                        <p className="Home-about-text">Welcome to DPT Physical Therapy & Performance, a rehabilitation group! Let our Doctors of Physical Therapy design a specialized treatment plan tailored to your personal care. Our staff is dedicated to patient focused service, where we don't just meet, but strive to exceed your expectations. The success of our patients is how we measure the success of our group! Let our Doctors of PT "get you back to LIFE!"</p>
                         <button className="Home-button Home-button-about" onClick={() => navigate('/about')}>LEARN MORE&ensp;<i className="fa fa-angle-right" /></button>
                     </div>
                 </div>}
@@ -112,7 +112,7 @@ const Home = () => {
                 <div className="Home-get-started-text">
                     <div className="Home-container">
                         <h1 className="Home-title">GET STARTED</h1>
-                        <p className="Home-about-text">Take the next step to getting started and "Getting Back to Life"</p>
+                        <p className="Home-about-text">Take the next step to getting started and "Getting Back to Life".</p>
                         <button className="Home-button Home-button-get-started" onClick={() => navigate('/get-started')}>LEARN HOW TO GET STARTED&ensp;<i className="fa fa-angle-right" /></button>
                     </div>
                 </div>
@@ -138,9 +138,9 @@ const Home = () => {
                 </div>
                 <div className="Home-get-started-text">
                     <div className="Home-container">
-                        <h1 className="Home-title">TESTIMONIALS</h1>
-                        <p className="Home-about-text">Find out what our patients are saying about their experiences at DPT Therapy & Performance!</p>
-                        <button className="Home-button Home-button-get-started" onClick={() => navigate('/testimonials')}>HEAR FROM SOME OF OUR SATISFIED CUSTOMERS&ensp;<i className="fa fa-angle-right" /></button>
+                        <h1 className="Home-title">PATIENT EXPERIENCES</h1>
+                        <p className="Home-about-text">Find out what our patients are saying about their experiences at DPT Physical Therapy & Performance!</p>
+                        <button className="Home-button Home-button-get-started" onClick={() => navigate('/testimonials')}>HEAR FROM SOME OF OUR SATISFIED PATIENTS&ensp;<i className="fa fa-angle-right" /></button>
                     </div>
                 </div>
             </div>

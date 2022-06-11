@@ -20,7 +20,7 @@ const Location = () => {
                     Stephenville, TX 76401<br />
                     Phone: (254) 431-5100<br />
                     Fax: (254) 459-4862<br />
-                    <a className="Footer-link-white" href="mailto:dpttherapyandperformance@gmail.com">dpttherapyandperformance@gmail.com</a>
+                    <a className="Location-link" href="mailto:dpttherapyandperformance@gmail.com">dpttherapyandperformance@gmail.com</a>
                 </div>
             </div>
         </div>

@@ -77,8 +77,8 @@ const Testimonials = () => {
                     <div className="Testimonials-image-overlay-left" />
                 </div>}
                 <Carousel className="Testimonials-carousel" pause="hover" controls={false}>
-                    {testimonials.filter(testimonial => testimonial.featured).map(testimonial => (
-                        <Carousel.Item className="Testimonials-carousel-item" interval={3000} key={testimonial.photo}>
+                    {testimonials.filter(testimonial => testimonial.featured).map((testimonial, i) => (
+                        <Carousel.Item className="Testimonials-carousel-item" interval={3000} key={i}>
                             <div className="Testimonials-customer">
                                 <CustomerPhoto photo={testimonial.photo} />
                                 <div className="Testimonials-name">{testimonial.name.toUpperCase()}</div>
@@ -92,8 +92,8 @@ const Testimonials = () => {
                 </div>}
             </div>
             <div className="Testimonials-main">
-                {testimonials.filter(testimonial => !testimonial.featured).map(testimonial => (
-                    <div className="Testimonial-card">
+                {testimonials.filter(testimonial => !testimonial.featured).map((testimonial, i) => (
+                    <div key={i} className="Testimonial-card">
                         <div className="Testimonials-customer">
                             <CustomerPhoto photo={testimonial.photo} />
                             <div className="Testimonials-name">{testimonial.name.toUpperCase()}</div>

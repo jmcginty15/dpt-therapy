@@ -1,6 +1,6 @@
 .Location {
     display: grid;
-    background-color: var(--grey-1);
+    background-color: var(--grey-6);
 }
 
 .Location-image {
@@ -30,7 +30,7 @@
     }
 
     .Location-image-overlay {
-        background: linear-gradient(to right, #00000033 70%, var(--grey-1));
+        background: linear-gradient(to right, #00000033 70%, var(--grey-6));
     }
 }
 
@@ -44,10 +44,21 @@
     }
 
     .Location-image-overlay {
-        background: linear-gradient(to bottom, #00000033, var(--grey-1));
+        background: linear-gradient(to bottom, #00000033, var(--grey-6));
     }
 
     .Location-text {
         padding-top: 2rem;
     }
+}
+
+.Location-link {
+    color: white;
+    border-radius: 5px;
+}
+
+.Location-link:hover {
+    color: var(--accent);
+    cursor: pointer;
+    transition: 0.25s;
 }

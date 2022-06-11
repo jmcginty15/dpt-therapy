@@ -2,8 +2,9 @@
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     text-align: left;
-    background-color: var(--grey-5);
-    color: var(--accent);
+    background-color: var(--grey-1);
+    color: black;
+    font-weight: 500;
     border-top: solid var(--accent) 2px;
 }
 
@@ -49,26 +50,11 @@
     color: var(--accent-variant);
     cursor: pointer;
     transition: 0.25s;
-    background-color: white;
-}
-
-.Footer-link-white {
-    color: white;
-    border-radius: 5px;
-}
-
-.Footer-link-white:hover {
-    color: var(--accent-variant);
-    cursor: pointer;
-    transition: 0.25s;
-    background-color: white;
-    padding-left: 0.15rem;
-    padding-right: 0.15rem;
 }
 
 .Footer-svg {
-    fill: white;
-    color: white;
+    fill: var(--accent);
+    color: var(--accent);
 }
 
 .Footer-svg:hover {
@@ -91,4 +77,8 @@
     cursor: pointer;
     color: var(--accent-variant) !important;
     transition: 0.15s;
+}
+
+.Footer-email {
+    word-wrap: break-word;
 }

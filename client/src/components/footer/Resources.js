@@ -8,7 +8,7 @@ const Resources = () => {
 
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768 && image === treatmentRoom) setImage(panorama);
-        else if (image === panorama) setImage(treatmentRoom);
+        else if (window.innerWidth <= 768 && image === panorama) setImage(treatmentRoom);
     });
 
     return (

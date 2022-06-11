@@ -1,18 +1,19 @@
 import { useNavigate } from 'react-router';
 import './StaffCard.css';
 
-const StaffCard = ({ name, title, photo, bioLink = null }) => {
+const StaffCard = ({ name, credentials, title, photo, bioParagraphs }) => {
     const navigate = useNavigate();
-    const classes = `StaffCard-name${bioLink ? ' StaffCard-link' : ''}`;
 
     return (
         <div className="StaffCard">
-            <div className="StaffCard-photo" style={{ backgroundImage: `url(${photo})` }}>
-                <div className="StaffCard-photo-overlay" />
-            </div>
+            <div className="StaffCard-photo" style={{ backgroundImage: `url(${photo})` }} />
             <div className="StaffCard-text">
-                <h4 className={classes} onClick={() => navigate(`/about${bioLink}`, false)}>{name.toUpperCase()}</h4>
-                <p className="StaffCard-title">{title}</p>
+                <h4 className="StaffCard-name">
+                    {name.toUpperCase()}
+                    {credentials && <span>&ensp;<small>{credentials.toUpperCase()}</small></span>}
+                </h4>
+                <h6 className="StaffCard-title">{title}</h6>
+                {bioParagraphs.map((paragraph, i) => <p className="StaffCard-bio" key={i}>{paragraph}</p>)}
             </div>
         </div>
     )

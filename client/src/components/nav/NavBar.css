@@ -7,18 +7,24 @@
     height: fit-content;
 }
 
-#brand-logo {
+/* #brand-logo {
     color: white;
 }
 
 #brand-logo:hover {
     color: var(--grey-2);
     transition: 0.15s;
-}
+} */
 
 #brand-logo-container {
+    color: white;
     margin: 0;
     padding: 10px 0 10px 0;
+}
+
+#brand-logo-container:hover {
+    color: var(--grey-2);
+    transition: 0.15s;
 }
 
 .NavBar-item {

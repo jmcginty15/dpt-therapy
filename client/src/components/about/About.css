@@ -3,7 +3,7 @@
 }
 
 .About-content {
-    background-color: var(--grey-3);
+    background-color: var(--grey-6);
     display: grid;
 }
 
@@ -11,6 +11,7 @@
     width: 100%;
     background-size: cover;
     background-position-x: center;
+    background-position-y: center;
 }
 
 .About-text {
@@ -36,7 +37,7 @@
 .About-image-overlay-left {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right, #00000033 40%, var(--grey-3));
+    background: linear-gradient(to right, #00000033 40%, var(--grey-6));
 }
 
 @media (min-width: 1000px) {
@@ -49,55 +50,13 @@
     }
 
     .About-image-overlay-left {
-        background: linear-gradient(to right, #00000033 40%, var(--grey-3));
-    }
-
-    .About-staff-grid {
-        width: 70%;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        row-gap: 4rem;
-        column-gap: 4rem;
-    }
-}
-
-@media (max-width: 1000px) {
-    .About-staff-grid {
-        width: 70%;
-        grid-template-columns: 25% 25% 25% 25%;
-        row-gap: 3rem;
-        column-gap: 3rem;
-    }
-}
-
-@media (max-width: 700px) {
-    .About-staff-grid {
-        width: 80%;
-        grid-template-columns: 33.333% 33.333% 33.333%;
-        row-gap: 2rem;
-        column-gap: 2rem;
-    }
-}
-
-@media (max-width: 450px) {
-    .About-staff-grid {
-        width: 80%;
-        grid-template-columns: 50% 50%;
-        row-gap: 2rem;
-        column-gap: 2rem;
-    }
-}
-
-@media (max-width: 300px) {
-    .About-staff-grid {
-        width: 80%;
-        grid-template-columns: 100%;
-        column-gap: 2rem;
+        background: linear-gradient(to right, #00000033 40%, var(--grey-6));
     }
 }
 
 @media (max-width: 1000px) {
     .About-photo {
-        height: 400px;
+        aspect-ratio: 7/5;
     }
 
     .About-content {
@@ -105,7 +64,19 @@
     }
 
     .About-image-overlay-left {
-        background: linear-gradient(to bottom, #00000033 40%, var(--grey-3));
+        background: linear-gradient(to bottom, #00000033 40%, var(--grey-6));
+    }
+}
+
+@media (max-width: 1000px) {
+    .About-staff-grid {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .About-staff-grid {
+        width: 70%;
     }
 }
 
@@ -118,6 +89,9 @@
     margin: 2rem auto 2rem auto;
     display: grid;
     justify-content: center;
+    grid-template-columns: 100%;
+    row-gap: 4rem;
+    column-gap: 4rem;
 }
 
 .About-ul {
