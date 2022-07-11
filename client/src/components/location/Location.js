@@ -1,11 +1,11 @@
 import Map from '../map/Map';
-import weightroom from '../home/images/weightroom.jpg';
+import cardio from '../home/images/cardio.jpg';
 import './Location.css';
 
 const Location = () => {
     return (
         <div className="Location">
-            <div className="Location-image" style={{ backgroundImage: `url(${weightroom})` }}>
+            <div className="Location-image" style={{ backgroundImage: `url(${cardio})` }}>
                 <div className="Location-image-overlay" />
             </div>
             <div>

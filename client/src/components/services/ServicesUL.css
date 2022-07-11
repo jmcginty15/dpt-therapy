@@ -1,0 +1,15 @@
+.ServicesUL-double, .ServicesUL-single {
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+}
+
+.ServicesUL-double {
+    grid-template-columns: 50% 50%;
+}
+
+.ServicesUL-single {
+    grid-template-columns: 100%;
+}

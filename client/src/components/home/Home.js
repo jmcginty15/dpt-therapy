@@ -13,7 +13,7 @@ import bannerVertical4 from './images/banner-vertical-4.jpg';
 import bicycle from './images/bicycle.jpg';
 import family from './images/family.jpg';
 import football from './images/football.jpg';
-import cardio from './images/cardio.jpg';
+import weightroom from './images/weightroom.jpg';
 import './Home.css';
 
 const horizontalBanners = [
@@ -65,17 +65,15 @@ const verticalBanners = [
 const Home = () => {
     const navigate = useNavigate();
 
-    const [banners, setBanners] = useState(window.innerWidth >= 768 ? horizontalBanners : verticalBanners);
+    const [banners, setBanners] = useState(window.innerWidth >= 950 ? horizontalBanners : verticalBanners);
     const [photoRight, setPhotoRight] = useState(window.innerWidth > 768);
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
-            if (JSON.stringify(banners) === JSON.stringify(verticalBanners)) setBanners(horizontalBanners);
-            if (!photoRight) setPhotoRight(true);
-        } else {
-            if (JSON.stringify(banners) === JSON.stringify(horizontalBanners)) setBanners(verticalBanners);
-            if (photoRight) setPhotoRight(false);
-        }
+        if (window.innerWidth > 768 && !photoRight) setPhotoRight(true);
+        else if (window.innerWidth <= 768 && photoRight) setPhotoRight(false);
+
+        if (window.innerWidth >= 950 && JSON.stringify(banners) !== JSON.stringify(horizontalBanners)) setBanners(horizontalBanners);
+        else if (window.innerWidth < 950 && JSON.stringify(banners) !== JSON.stringify(verticalBanners)) setBanners(verticalBanners);
     });
 
     return (
@@ -90,7 +88,7 @@ const Home = () => {
                 <Carousel className="Home-carousel" pause={false} controls={false}>
                     {banners.map(banner => (
                         <Carousel.Item className="Home-carousel-item" interval={3000} key={banner.photo}>
-                            <img className="Home-banner-image" src={banner.photo} />
+                            <img className="Home-banner-image" src={banner.photo} alt="" />
                             <div className="Home-banner-shade" />
                             <Carousel.Caption bsPrefix="Home-banner-caption">
                                 <h1 className="Home-banner-caption-text" style={{ color: banner.fontColor }}>{banner.caption}</h1>
@@ -145,7 +143,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="Home-location">
-                {!photoRight && <div className="Home-image" style={{ backgroundImage: `url(${cardio})` }}>
+                {!photoRight && <div className="Home-image" style={{ backgroundImage: `url(${weightroom})` }}>
                     <div className="Home-image-overlay-right" />
                 </div>}
                 <Map
@@ -153,7 +151,7 @@ const Home = () => {
                     loadingElement={<div style={{ height: `100%` }} />}
                     containerElement={<div className="Map" />}
                     mapElement={<div style={{ height: `100%` }} />} />
-                {photoRight && <div className="Home-image" style={{ backgroundImage: `url(${cardio})` }}>
+                {photoRight && <div className="Home-image" style={{ backgroundImage: `url(${weightroom})` }}>
                     <div className="Home-image-overlay-right" />
                 </div>}
             </div>

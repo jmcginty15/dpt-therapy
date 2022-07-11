@@ -1,0 +1,45 @@
+.Disclosure {
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem 0;
+    text-align: left;
+    margin: auto;
+    word-break: break-word;
+}
+
+.Disclosure-title {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Disclosure-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.Disclosure-address {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .Disclosure {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Disclosure {
+        width: 90%;
+    }
+}
+
+.Disclosure-link {
+    color: var(--accent);
+    border-radius: 5px;
+}
+
+.Disclosure-link:hover {
+    color: var(--accent-variant);
+    cursor: pointer;
+    transition: 0.25s;
+}

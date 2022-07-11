@@ -22,7 +22,7 @@ const Resources = () => {
                         <a className="Resources-link" href="https://www.cms.gov/" target="_blank" rel="noreferrer">Center for Medicare Services</a>
                         <a className="Resources-link" href="https://www.womenshealthapta.org/" target="_blank" rel="noreferrer">Physical Therapy Association - Women's Care</a>
                         <a className="Resources-link" href="https://www.tdi.texas.gov/" target="_blank" rel="noreferrer">Texas Department of Insurance</a>
-                        <a className="Resources-link" href="https://www.tpta.org/" target="_blank" rel="noreferrer">Nondiscrimination Disclosure Statement</a>
+                        <a className="Resources-link" href="/nondiscrimination-disclosure-statement" rel="noreferrer">Nondiscrimination Disclosure Statement</a>
                     </div>
                 </div>
             </div>

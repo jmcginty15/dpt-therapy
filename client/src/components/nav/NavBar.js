@@ -7,85 +7,62 @@ import {
     NavItem,
     NavLink
 } from 'reactstrap';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 // import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
-import logo from '../../assets/DPT_therapy_v4-03.png';
-import { ReactComponent as NavLogoWords } from '../../assets/logo-words.svg';
+import { ReactComponent as NavLogoWordsSingleRow } from '../../assets/logo-words-single-row.svg';
+import { ReactComponent as NavLogoWordsDoubleRow } from '../../assets/logo-words-double-row.svg';
 import { ReactComponent as NavLogoHat } from '../../assets/logo-hat.svg';
 import _ from 'lodash';
 import './NavBar.css';
 
+const inRange = width => {
+    if (width >= 1200 || width <= 991) return true;
+    else return false;
+}
+
 // Navbar component
 const NavBar = () => {
     const navigate = useNavigate();
-    const [NavLogo, setNavLogo] = useState(window.innerWidth >= 768 ? NavLogoWords : NavLogoHat);
 
+    const [NavLogoWords, setNavLogoWords] = useState(inRange(window.innerWidth) ? NavLogoWordsSingleRow : NavLogoWordsDoubleRow);
+    const [showLogoWords, setShowLogoWords] = useState(window.innerWidth >= 768);
     window.addEventListener('resize', () => {
-        if (window.innerWidth >= 768 && !_.isEqual(NavLogo, NavLogoWords)) setNavLogo(NavLogoWords);
-        else if (window.innerWidth < 768 && !_.isEqual(NavLogo, NavLogoHat)) setNavLogo(NavLogoHat);
-    });
+        if (window.innerWidth >= 768 && !showLogoWords) setShowLogoWords(true);
+        else if (window.innerWidth < 768 && showLogoWords) setShowLogoWords(false);
 
+        const isInRange = inRange(window.innerWidth);
+        if (isInRange && !_.isEqual(NavLogoWords, NavLogoWordsSingleRow)) setNavLogoWords(NavLogoWordsSingleRow);
+        else if (!isInRange && !_.isEqual(NavLogoWords, NavLogoWordsDoubleRow)) setNavLogoWords(NavLogoWordsDoubleRow);
+    });
 
     const [open, setOpen] = useState(false);
     const toggleOpen = () => setOpen(!open);
-    // useEffect(() => {
-    //     if (open) {
-    //         if (backgroundColor !== '#ffffff') setBackgroundColor('#ffffff');
-    //         if (textColor !== 'var(--accent)') setTextColor('var(--accent)');
-    //     } else setNavBarColor();
-    // }, [open]);
-
-    const [backgroundColor, setBackgroundColor] = useState('#ffffff00');
-    const [textColor, setTextColor] = useState('white');
-
-    // const setNavBarColor = () => {
-    //     const pos = window.scrollY;
-    //     let newBackground = '#ffffff';
-    //     let newText = 'var(--accent)';
-
-    //     if (open) {
-    //         newBackground = '#ffffff';
-    //         newText = 'var(--accent)';
-    //     } else if (pos < 150) {
-    //         let opacity = Math.round(pos / 150 * 255).toString(16);
-    //         if (opacity.length < 2) opacity = `0${opacity}`;
-    //         newBackground = `#ffffff${opacity}`;
-
-    //         if (pos === 0) newText = 'white';
-    //         else newText = 'var(--accent)';
-    //     }
-
-    //     if (backgroundColor !== newBackground) setBackgroundColor(newBackground);
-    //     if (textColor !== newText) setTextColor(newText);
-    // }
-
-    // window.addEventListener('scroll', setNavBarColor);
 
     return (
         <div className="NavBar">
-            <Navbar id="Nav" light={backgroundColor === '#ffffff'} dark={backgroundColor !== '#ffffff'} expand="lg" fixed="top">
+            <Navbar id="Nav" expand="lg" fixed="top">
                 <NavbarBrand href="/" id="brand-logo-container">
-                    {_.isEqual(NavLogo, NavLogoWords) && <NavLogoHat height={75} />}
-                    <NavLogo id="brand-logo" height={75} />
+                    <NavLogoHat height={75} />
+                    {showLogoWords && <NavLogoWords id="brand-logo" height={75} />}
                 </NavbarBrand>
                 <NavbarToggler onClick={toggleOpen} />
                 <Collapse isOpen={open} navbar>
                     <Nav className="ms-auto" navbar>
                         <NavItem className="NavBar-item">
-                            <NavLink onClick={() => navigate('/about', false)} style={{ color: textColor }}><span className="NavBar-link">ABOUT</span></NavLink>
+                            <NavLink onClick={() => navigate('/about', false)}><span className="NavBar-link">ABOUT</span></NavLink>
                         </NavItem>
                         <NavItem className="NavBar-item">
-                            <NavLink onClick={() => navigate('/get-started', false)} style={{ color: textColor }}><span className="NavBar-link">GET STARTED</span></NavLink>
+                            <NavLink onClick={() => navigate('/get-started', false)}><span className="NavBar-link">GET STARTED</span></NavLink>
                         </NavItem>
                         <NavItem className="NavBar-item">
-                            <NavLink onClick={() => navigate('/services', false)} style={{ color: textColor }}><span className="NavBar-link">SERVICES</span></NavLink>
+                            <NavLink onClick={() => navigate('/services', false)}><span className="NavBar-link">SERVICES</span></NavLink>
                         </NavItem>
                         <NavItem className="NavBar-item">
-                            <NavLink onClick={() => navigate('/patient-experiences', false)} style={{ color: textColor }}><span className="NavBar-link">PATIENT EXPERIENCES</span></NavLink>
+                            <NavLink onClick={() => navigate('/patient-experiences', false)}><span className="NavBar-link">PATIENT EXPERIENCES</span></NavLink>
                         </NavItem>
                         <NavItem className="NavBar-item">
-                            <NavLink onClick={() => navigate('/location', false)} style={{ color: textColor }}><span className="NavBar-link">LOCATION</span></NavLink>
+                            <NavLink onClick={() => navigate('/location', false)}><span className="NavBar-link">LOCATION</span></NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

@@ -76,7 +76,7 @@ const Testimonials = () => {
                 {!photoRight && <div className="Testimonials-photo" style={{ backgroundImage: `url(${testimonialsPhoto})` }}>
                     <div className="Testimonials-image-overlay-left" />
                 </div>}
-                <Carousel className="Testimonials-carousel" pause="hover" controls={false}>
+                {/* <Carousel className="Testimonials-carousel" pause="hover" controls={false}>
                     {testimonials.filter(testimonial => testimonial.featured).map((testimonial, i) => (
                         <Carousel.Item className="Testimonials-carousel-item" interval={3000} key={i}>
                             <div className="Testimonials-customer">
@@ -86,12 +86,16 @@ const Testimonials = () => {
                             <div className="Testimonials-text">{testimonial.text}</div>
                         </Carousel.Item>
                     ))}
-                </Carousel>
+                </Carousel> */}
+                <div className="Testimonials-placeholder">
+                    <h1 className="Testimonials-title">COMING SOON!</h1>
+                    <p>If you're a past or current patient of ours and would like your story to be featured here in the future, you can email us at <a className="Testimonials-link" href="mailto:dpttherapyandperformance@gmail.com">dpttherapyandperformance@gmail.com</a>.</p>
+                </div>
                 {photoRight && <div className="Testimonials-photo" style={{ backgroundImage: `url(${testimonialsPhoto})` }}>
                     <div className="Testimonials-image-overlay-left" />
                 </div>}
             </div>
-            <div className="Testimonials-main">
+            {/* <div className="Testimonials-main">
                 {testimonials.filter(testimonial => !testimonial.featured).map((testimonial, i) => (
                     <div key={i} className="Testimonial-card">
                         <div className="Testimonials-customer">
@@ -101,7 +105,7 @@ const Testimonials = () => {
                         <div className="Testimonials-text">{testimonial.text}</div>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -44,7 +44,7 @@
 .Testimonials-image-overlay-left {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to left, #00000033 40%, var(--grey-6));
+    background: linear-gradient(to left, #00000033 40%, var(--grey-2));
 }
 
 .Testimonials-info {
@@ -93,7 +93,7 @@
     }
 
     .Testimonials-image-overlay-left {
-        background: linear-gradient(to left, #00000033 40%, var(--grey-6));
+        background: linear-gradient(to left, #00000033 40%, var(--grey-2));
     }
 }
 
@@ -111,7 +111,7 @@
     }
 
     .Testimonials-image-overlay-left {
-        background: linear-gradient(to bottom, #00000033 40%, var(--grey-6));
+        background: linear-gradient(to bottom, #00000033 40%, var(--grey-2));
     }
 }
 
@@ -120,17 +120,14 @@
 }
 
 .Testimonials-link {
-    color: white;
+    color: var(--accent);
     border-radius: 5px;
-    padding-left: 0.15rem;
-    padding-right: 0.15rem;
 }
 
 .Testimonials-link:hover {
     color: var(--accent-variant);
     cursor: pointer;
     transition: 0.25s;
-    background-color: white;
 }
 
 .Testimonial-card {
@@ -138,4 +135,10 @@
     width: 90%;
     margin: 1rem auto;
     border-radius: 3px;
+}
+
+.Testimonials-placeholder {
+    color: black;
+    padding: 25% 1rem;
+    background-color: var(--grey-2);
 }

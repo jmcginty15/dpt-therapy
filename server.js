@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors({ origin: '*' }));
 
-const CLIENT_ROUTES = ['/'];
+const CLIENT_ROUTES = ['/', '/about', '/get-started', '/services', '/patient-experiences', '/location', '/nondiscrimination-disclosure-statement'];
 app.use((req, res, next) => {
     if (CLIENT_ROUTES.includes(req.path)) {
         res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');

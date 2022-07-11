@@ -159,7 +159,7 @@
 .Home-banner-shade {
     z-index: 1;
     position: absolute;
-    background-image: radial-gradient(#00000000, #000000ff);
+    background-image: radial-gradient(#00000066 40%, #c0c0c000 70%, var(--grey-4));
     height: 100%;
     width: 100%;
 }

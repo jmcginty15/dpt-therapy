@@ -1,5 +1,4 @@
 import StaffCard from './StaffCard';
-import aboutPhoto from '../../assets/Re__Website_development_for_DPT/DrD-Explaining-Injury.jpg';
 import christyMcminn from '../../assets/christy-mcminn.jpg';
 import cheyenneStroope from '../../assets/cheyenne-stroope.jpg';
 import treyTaylor from '../../assets/trey-taylor.jpg';
@@ -8,7 +7,7 @@ import './About.css';
 
 export const staff = [
     {
-        name: 'Trey Taylor',
+        name: 'Dr. Trey Taylor',
         credentials: 'PT, DPT, Cert. DN.',
         title: 'Vice President',
         photo: treyTaylor,
@@ -52,7 +51,7 @@ const About = () => {
                     <ul className="About-ul About-text-content">
                         <li className="About-li">Compassion — All people deserve to receive care in a loving and accepting environment.</li>
                         <li className="About-li">Excellence — All interventions are based on the value of the patient, experience of the staff, and research/technology.</li>
-                        <li className="About-li">Integriy — All interventions are provided in an honest and "always do the right thing" setting.</li>
+                        <li className="About-li">Integrity — All interventions are provided in an honest and "always do the right thing" setting.</li>
                         <li className="About-li">Diligence — All interactions are built on hard work and a strong work ethic.</li>
                     </ul>
                 </div>

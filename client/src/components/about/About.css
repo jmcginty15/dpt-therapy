@@ -36,7 +36,7 @@
 
 .About-image-overlay-left {
     width: 100%;
-    background: linear-gradient(to right, #00000033 40%, var(--grey-6));
+    background: linear-gradient(to right, #00000033 75%, var(--grey-6));
 }
 
 @media (min-width: 1000px) {
@@ -49,7 +49,7 @@
     }
 
     .About-image-overlay-left {
-        background: linear-gradient(to right, #00000033 40%, var(--grey-6));
+        background: linear-gradient(to right, #00000033 75%, var(--grey-6));
         height: 100%;
     }
 }
