@@ -1,8 +1,10 @@
 import StaffCard from './StaffCard';
-import christyMcminn from '../../assets/christy-mcminn.jpg';
-import cheyenneStroope from '../../assets/cheyenne-stroope.jpg';
-import treyTaylor from '../../assets/trey-taylor.jpg';
-import dptGroup from '../../assets/dpt-group.jpg';
+import christyMcminn from '../../assets/christy-mcminn-2.jpg';
+import cheyenneStroope from '../../assets/cheyenne-stroope-2.jpg';
+import treyTaylor from '../../assets/trey-taylor-2.jpg';
+import chrisBramlett from '../../assets/chris-bramlett.jpg';
+import caylaLimas from '../../assets/cayla-limas.jpg';
+import dptGroup from '../../assets/dpt-group-2.jpg';
 import './About.css';
 
 export const staff = [
@@ -25,6 +27,23 @@ export const staff = [
             "Cheyenne was born and raised in Brownwood, Texas where she played numerous sports and participated in many FFA activities throughout high school. After the completion of high school she attended Tarleton State University receiving her Bachelor's degree in Kinesiology with a focus in Exercise and Allied Health Professions in December of 2021 with Honors.",
             "Cheyenne is currently pursuing her Master's degree in Kinesiology at Tarleton State University with a focus in Exercise Science and a plan to attend Physical Therapy School in the near future."
         ]
+    },
+    {
+        name: 'Chris Bramlett',
+        credentials: null,
+        title: 'Physical Therapy Technician',
+        photo: chrisBramlett,
+        bioParagraphs: [
+            "Chris is an experienced Physical Therapy Technician with 16 years of working knowledge. Born and raised here in Stephenville, he graduated from Stephenville High School in 1995. He then attended Ranger College and received his Associate's Degree.",
+            "Chris enjoys working with people and is very involved in the sports community. He never misses a Stephenville football game. He enjoys teaching and working with young athletes in a 7-on-7 football league, track and field, and basketball for Stephenville High School and Henderson Junior High. Chris resides in Stephenville today and enjoys fishing, running, and hanging out with family and friends."
+        ]
+    },
+    {
+        name: 'Cayla Limas',
+        credentials: null,
+        title: 'Physical Therapy Assistant',
+        photo: caylaLimas,
+        bioParagraphs: ["Cayla has 10 years of experience as a Physical Therapy Assistant, with 7 of those years in an outpatient setting. She earned her BS in Exercise Sports Science from Texas Tech University in 2009, and an Associate's in Applied Science - Physical Therapist Assistant from Amarillo College in 2012. Cayla has worked in a variety of physical therapy settings ranging from the east coast, west Texas, and then back home to north Texas. Born in Fort Worth, she spent most of her early years locally in Santo, Texas. Cayla knew before graduating high school that she wanted to pursue a career in physical therapy. While competing in softball she sustained an injury which drew her to the physical therapy profession. She enjoys working with patients in a variety of settings, striving to develop a relationship with each of her patients and developing treatment plans specific to the needs of each. Cayla is blessed to spend her life with her husband Abel and two children, Amelia and Adrian. They love spending time on their property fishing, riding horses, and enjoying beautiful sunsets."]
     },
     {
         name: 'Christy McMinn',

@@ -15,7 +15,7 @@
 }
 
 .About-text {
-    padding: 2rem;
+    padding: 0.5rem;
     color: white;
 }
 
@@ -32,6 +32,7 @@
 
 .About-text-content {
     font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 }
 
 .About-image-overlay-left {
@@ -45,7 +46,7 @@
     }
 
     .About-content {
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 65% 35%;
     }
 
     .About-image-overlay-left {
@@ -64,9 +65,9 @@
     }
 
     .About-image-overlay-left {
-        background: linear-gradient(to bottom, #00000033 40%, var(--grey-6));
+        background: linear-gradient(to bottom, #00000033 80%, var(--grey-6));
         height: 0;
-        padding-bottom: 71.142857%;
+        padding-bottom: 60%;
     }
 }
 
