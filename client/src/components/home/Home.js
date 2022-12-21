@@ -6,10 +6,12 @@ import bannerHorizontal1 from "./images/banner-horizontal-1.jpg";
 import bannerHorizontal2 from "./images/banner-horizontal-2.jpg";
 import bannerHorizontal3 from "./images/banner-horizontal-3.jpg";
 import bannerHorizontal4 from "./images/banner-horizontal-4.jpg";
+import bannerHorizontal5 from "./images/banner-horizontal-5.jpg";
 import bannerVertical1 from "./images/banner-vertical-1.jpg";
 import bannerVertical2 from "./images/banner-vertical-2.jpg";
 import bannerVertical3 from "./images/banner-vertical-3.jpg";
 import bannerVertical4 from "./images/banner-vertical-4.jpg";
+import bannerVertical5 from "./images/banner-vertical-5.jpg";
 import bicycle from "./images/bicycle.jpg";
 import family from "./images/family.jpg";
 import football from "./images/football.jpg";
@@ -34,8 +36,13 @@ const horizontalBanners = [
     fontColor: "white",
   },
   {
-    photo: bannerHorizontal2,
+    photo: bannerHorizontal5,
     caption: "BACK TO SPORTS",
+    fontColor: "white",
+  },
+  {
+    photo: bannerHorizontal2,
+    caption: "BACK IN THE SADDLE",
     fontColor: "white",
   },
 ];
@@ -57,8 +64,13 @@ const verticalBanners = [
     fontColor: "black",
   },
   {
-    photo: bannerVertical2,
+    photo: bannerVertical5,
     caption: "BACK TO SPORTS",
+    fontColor: "white",
+  },
+  {
+    photo: bannerVertical2,
+    caption: "BACK IN THE SADDLE",
     fontColor: "white",
   },
 ];
