@@ -101,6 +101,10 @@
   .Home-image-overlay-right {
     background: linear-gradient(to left, #00000033 70%, var(--grey-1));
   }
+
+  .Home-image-overlay-location {
+    background: linear-gradient(to left, #00000033 70%, var(--grey-3));
+  }
 }
 
 @media (max-width: 768px) {
@@ -149,6 +153,10 @@
 
   .Home-image-overlay-right {
     background: linear-gradient(to bottom, #00000033, var(--grey-1));
+  }
+
+  .Home-image-overlay-location {
+    background: linear-gradient(to bottom, #00000033 70%, var(--grey-3));
   }
 }
 
@@ -295,7 +303,8 @@
 }
 
 .Home-image-overlay-left,
-.Home-image-overlay-right {
+.Home-image-overlay-right,
+.Home-image-overlay-location {
   height: 100%;
   width: 100%;
 }
@@ -325,4 +334,9 @@
 
 .Home-container {
   margin: auto;
+}
+
+.Home-location-text {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3rem;
 }

@@ -1,5 +1,10 @@
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
-import './Map.css';
+import {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker,
+} from "react-google-maps";
+import "./Map.css";
 
 // const defaultView = {
 //     center: {
@@ -9,14 +14,12 @@ import './Map.css';
 //     zoom: 11
 // };
 
-const coordinates = { lat: 32.20149, lng: -98.2451 };
-
-const Map = (props) =>
-    <GoogleMap defaultCenter={coordinates} defaultZoom={13}>
-        <Marker
-            position={coordinates}
-            title="DPT Therapy"
-        />
-    </GoogleMap>
+const Map = (props) => (
+  <GoogleMap defaultCenter={props.coordinates} defaultZoom={13}>
+    {props.coordinates.lat === 32.20149 && (
+      <Marker position={props.coordinates} title="DPT Therapy" />
+    )}
+  </GoogleMap>
+);
 
 export default withScriptjs(withGoogleMap(Map));

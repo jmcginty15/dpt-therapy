@@ -1,18 +1,18 @@
-import { Route, Routes, Navigate } from 'react-router-dom';
-import { useScrollToTop } from './utils';
-import NavBar from './components/nav/NavBar';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Staff from './components/about/Staff';
-import GetStarted from './components/getStarted/GetStarted';
-import Services from './components/services/Services';
-import Testimonials from './components/testimonials/Testimonials';
-import Location from './components/location/Location';
-import Disclosure from './components/disclosure/Disclosure';
-import BackToTop from './components/BackToTop';
-import Resources from './components/footer/Resources';
-import Footer from './components/footer/Footer';
-import './App.css';
+import { Route, Routes, Navigate } from "react-router-dom";
+import { useScrollToTop } from "./utils";
+import NavBar from "./components/nav/NavBar";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Staff from "./components/about/Staff";
+import GetStarted from "./components/getStarted/GetStarted";
+import Services from "./components/services/Services";
+import Testimonials from "./components/testimonials/Testimonials";
+import Location from "./components/location/Location";
+import Disclosure from "./components/disclosure/Disclosure";
+import BackToTop from "./components/BackToTop";
+import Resources from "./components/footer/Resources";
+import Footer from "./components/footer/Footer";
+import "./App.css";
 
 function App() {
   useScrollToTop();
@@ -27,9 +27,13 @@ function App() {
         <Route exact path="/get-started" element={<GetStarted />} />
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/patient-experiences" element={<Testimonials />} />
-        <Route exact path="/location" element={<Location />} />
-        <Route exact path="/nondiscrimination-disclosure-statement" element={<Disclosure />} />
-        <Route path={'*'} element={<Navigate to="/" />} />
+        <Route exact path="/locations" element={<Location />} />
+        <Route
+          exact
+          path="/nondiscrimination-disclosure-statement"
+          element={<Disclosure />}
+        />
+        <Route path={"*"} element={<Navigate to="/" />} />
       </Routes>
       <BackToTop />
       <Resources />
