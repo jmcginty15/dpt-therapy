@@ -294,7 +294,7 @@ const Home = () => {
           <h5 className="Home-location-text">
             Primary location in Stephenville, TX
             <br />
-            Second location coming soon to Glen Rose, TX!
+            New locations opening soon in Glen Rose and Lubbock!
           </h5>
           <button
             className="Home-button Home-button-get-started"
@@ -304,14 +304,21 @@ const Home = () => {
             <i className="fa fa-angle-right" />
           </button>
           <Map
-            coordinates={{ lat: 32.20149, lng: -98.2451 }}
+            coordinates={{ lat: 32.20100054545242, lng: -98.24578171940642 }}
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDEA1M2iQkyyxOx4kNrVPnW4AP_2Z4Bc2M"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div className="Map" />}
             mapElement={<div style={{ height: `100%` }} />}
           />
           <Map
-            coordinates={{ lat: 32.2367, lng: -97.7539 }}
+            coordinates={{ lat: 32.24869975775662, lng: -97.73704912183615 }}
+            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDEA1M2iQkyyxOx4kNrVPnW4AP_2Z4Bc2M"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div className="Map" />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+          <Map
+            coordinates={{ lat: 33.528601359520835, lng: -101.87790403284944 }}
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDEA1M2iQkyyxOx4kNrVPnW4AP_2Z4Bc2M"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div className="Map" />}

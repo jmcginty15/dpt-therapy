@@ -1,64 +1,77 @@
 .Location {
-    display: grid;
-    background-color: var(--grey-6);
+  display: grid;
+  background-color: var(--grey-4);
+  margin-bottom: 3rem;
+}
+
+.Location-map-container {
+  background-color: var(--grey-6);
 }
 
 .Location-image {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .Location-image-overlay {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .Location-text {
-    font-family: 'Montserrat', sans-serif;
-    padding-bottom: 2rem;
-    color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 2rem;
+  color: white;
+  word-wrap: break-word;
 }
 
 @media (min-width: 768px) {
-    .Location {
-        grid-template-columns: 45% 55%;
-    }
+  .Location {
+    grid-template-columns: 45% 55%;
+    row-gap: 3rem;
+  }
 
-    .Location-image {
-        height: 100%;
-    }
+  .Location-image {
+    height: 100%;
+  }
 
-    .Location-image-overlay {
-        background: linear-gradient(to right, #00000033 70%, var(--grey-6));
-    }
+  .Location-image-overlay {
+    background: linear-gradient(to right, #00000033 70%, var(--grey-6));
+  }
 }
 
 @media (max-width: 768px) {
-    .Location {
-        grid-template-columns: 100%;
-    }
+  .Location {
+    grid-template-columns: 100%;
+  }
 
-    .Location-image {
-        height: 400px;
-    }
+  .Location-image {
+    height: 250px;
+  }
 
-    .Location-image-overlay {
-        background: linear-gradient(to bottom, #00000033, var(--grey-6));
-    }
+  .Location-image-mid {
+    margin-top: 2rem;
+  }
 
-    .Location-text {
-        padding-top: 2rem;
-    }
+  .Location-image-overlay {
+    background: linear-gradient(to bottom, #00000033, var(--grey-6));
+  }
+
+  .Location-text {
+    padding-top: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .Location-link {
-    color: white;
-    border-radius: 5px;
+  color: white;
+  border-radius: 5px;
 }
 
 .Location-link:hover {
-    color: var(--accent);
-    cursor: pointer;
-    transition: 0.25s;
+  color: var(--accent);
+  cursor: pointer;
+  transition: 0.25s;
 }
