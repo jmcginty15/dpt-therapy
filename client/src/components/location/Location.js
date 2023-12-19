@@ -26,9 +26,9 @@ const Location = () => {
           <br />
           <a
             className="Location-link"
-            href="mailto:dpttherapyandperformance@gmail.com"
+            href="mailto:stephenville@dpttherapy.com"
           >
-            dpttherapyandperformance@gmail.com
+            stephenville@dpttherapy.com
           </a>
         </div>
         <Map
@@ -56,9 +56,9 @@ const Location = () => {
           <br />
           <a
             className="Location-link"
-            href="mailto:dpttherapyandperformance@gmail.com"
+            href="mailto:glenrose@dpttherapy.com"
           >
-            dpttherapyandperformance@gmail.com
+            glenrose@dpttherapy.com
           </a>
         </div>
         <Map
@@ -86,9 +86,9 @@ const Location = () => {
           <br />
           <a
             className="Location-link"
-            href="mailto:dpttherapyandperformance@gmail.com"
+            href="mailto:lubbock@dpttherapy.com"
           >
-            dpttherapyandperformance@gmail.com
+            lubbock@dpttherapy.com
           </a>
         </div>
         <Map
