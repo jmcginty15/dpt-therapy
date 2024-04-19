@@ -169,7 +169,7 @@ const Home = () => {
       </div>
       <div className="Home-rodeo">
         <div
-          className="Home-image"
+          className="Home-image Home-image-rodeo"
           style={{ backgroundImage: `url(${rodeo})` }}
         >
           <div className="Home-image-overlay-left" />
@@ -182,6 +182,20 @@ const Home = () => {
             </h1>
             <p className="Home-about-text">
               Let us get you back in the saddle!
+            </p>
+            <iframe
+              className="Home-video-player"
+              src="https://www.youtube.com/embed/zc2Tiwxi5lM?si=6Bp4qZC_EbTvpp19"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            />
+            <p className="Home-about-text">
+              Our Stephenville location works with the Tarleton State University
+              rodeo team and is the official rehabilitation provider of the
+              team!
             </p>
           </div>
         </div>
