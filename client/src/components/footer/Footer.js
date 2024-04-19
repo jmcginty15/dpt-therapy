@@ -81,9 +81,9 @@ const Footer = () => {
           <br />
           <a
             className="Footer-link Footer-email"
-            href="mailto:dpttherapyandperformance@gmail.com"
+            href="mailto:info@dpttherapy.com"
           >
-            dpttherapyandperformance@gmail.com
+            info@dpttherapy.com
           </a>
         </div>
       </div>
