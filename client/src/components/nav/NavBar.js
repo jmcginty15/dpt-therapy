@@ -45,7 +45,7 @@ const NavBar = () => {
 
   return (
     <div className="NavBar">
-      <Navbar id="Nav" expand="lg" fixed="top">
+      <Navbar id="Nav" expand="lg" fixed="top" dark>
         <NavbarBrand href="/" id="brand-logo-container">
           <NavLogoHat height={75} />
           {showLogoWords && <NavLogoWords id="brand-logo" height={75} />}

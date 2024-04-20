@@ -1,10 +1,10 @@
-@import url('../../../node_modules/font-awesome/css/font-awesome.min.css');
+@import url("../../../node_modules/font-awesome/css/font-awesome.min.css");
 
 .NavBar {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    background-color: #ffffff;
-    height: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background-color: #ffffff;
+  height: fit-content;
 }
 
 /* #brand-logo {
@@ -17,100 +17,100 @@
 } */
 
 #brand-logo-container {
-    color: white;
-    margin: 0;
-    padding: 10px 0 10px 0;
+  color: white;
+  margin: 0;
+  padding: 10px 0 10px 0;
 }
 
 #brand-logo-container:hover {
-    color: var(--grey-2);
-    transition: 0.15s;
+  color: var(--grey-2);
+  transition: 0.15s;
 }
 
 .NavBar-item {
-    width: fit-content;
+  width: fit-content;
 }
 
 .NavBar-link {
-    color: white;
-    position: relative;
+  color: white;
+  position: relative;
 }
 
 .NavBar-link:hover {
-    cursor: pointer;
-    color: var(--grey-2);
-    transition: 0.15s;
+  cursor: pointer;
+  color: var(--grey-2);
+  transition: 0.15s;
 }
 
 .NavBar-link-button {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    border: solid black 1px;
-    color: var(--accent);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid black 1px;
+  color: var(--accent);
 }
 
 .NavBar-link-button:hover {
-    cursor: pointer;
-    background-color: var(--grey-2);
-    transition: 0.15s;
+  cursor: pointer;
+  background-color: var(--grey-2);
+  transition: 0.15s;
 }
 
 .fa-credit-card {
-    font-size: larger;
+  font-size: larger;
 }
 
 .NavBar-brand:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.NavBar-link::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid var(--grey-2);
-    width: 0%;
-    transition: 0.25s;
+.NavBar-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid var(--grey-2);
+  width: 0%;
+  transition: 0.25s;
 }
 
 .NavBar-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-.NavBar-brand::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    border-bottom: 2px solid var(--text-accent);
-    transition: 0.25s;
+.NavBar-brand::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid var(--text-accent);
+  transition: 0.25s;
 }
 
 .NavBar-brand:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .NavBar-icon {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .NavBar-brand {
-    font-weight: bold;
-    position: relative;
-    color: var(--text-accent);
-    margin-left: 20px;
+  font-weight: bold;
+  position: relative;
+  color: var(--text-accent);
+  margin-left: 20px;
 }
 
 .NavBar-item {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 #Nav {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-image: linear-gradient(var(--accent), black);
-    position: static;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: linear-gradient(var(--accent), black);
+  position: static;
 }
