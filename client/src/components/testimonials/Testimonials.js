@@ -91,7 +91,7 @@ const Testimonials = () => {
                 key={i}
               >
                 <div className="Testimonials-customer">
-                  <CustomerPhoto photo={testimonial.photo} />
+                  {/* <CustomerPhoto photo={testimonial.photo} /> */}
                   <div className="Testimonials-name">
                     {testimonial.name.toUpperCase()}
                   </div>
@@ -119,7 +119,7 @@ const Testimonials = () => {
           .map((testimonial, i) => (
             <div key={i} className="Testimonial-card">
               <div className="Testimonials-customer">
-                <CustomerPhoto photo={testimonial.photo} />
+                {/* <CustomerPhoto photo={testimonial.photo} /> */}
                 <div className="Testimonials-name">
                   {testimonial.name.toUpperCase()}
                 </div>

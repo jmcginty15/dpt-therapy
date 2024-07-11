@@ -1,69 +1,69 @@
 .Resources {
-    font-family: 'Montserrat', sans-serif;
-    background-size: cover;
-    background-position: center;
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-position: center;
 }
 
 .Resources-shade {
-    height: 100%;
-    width: 100%;
-    background-image: radial-gradient(#00000000, #000000ff);
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(#00000000, #000000ff);
 }
 
 .Resources-container {
-    padding: 1rem;
-    margin: auto;
-    width: 65%;
-    background-color: #ffffff66;
+  padding: 1rem;
+  margin: auto;
+  width: 65%;
+  background-color: #ffffff99;
 }
 
 .Resources-title {
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: black;
-    font-weight: bold;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: black;
+  font-weight: bold;
 }
 
 .Resources-grid {
-    display: grid;
-    margin: auto;
+  display: grid;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
-    .Resources-shade {
-        padding: 50px;
-    }
+  .Resources-shade {
+    padding: 50px;
+  }
 
-    .Resources-container {
-        width: 65%;
-    }
+  .Resources-container {
+    width: 65%;
+  }
 
-    .Resources-grid {
-        grid-template-columns: 50% 50%;
-    }
+  .Resources-grid {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 @media (max-width: 768px) {
-    .Resources-shade {
-        padding: 15px;
-    }
+  .Resources-shade {
+    padding: 15px;
+  }
 
-    .Resources-container {
-        width: 90%;
-    }
+  .Resources-container {
+    width: 90%;
+  }
 
-    .Resources-grid {
-        grid-template-columns: 100%;
-    }
+  .Resources-grid {
+    grid-template-columns: 100%;
+  }
 }
 
 .Resources-link {
-    color: black;
-    font-weight: bold;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  color: black;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .Resources-link:hover {
-    color: var(--accent);
-    transition: 0.15s;
+  color: var(--accent);
+  transition: 0.15s;
 }

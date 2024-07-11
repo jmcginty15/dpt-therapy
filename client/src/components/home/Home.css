@@ -105,7 +105,7 @@
   }
 
   .Home-image-overlay-left {
-    background: linear-gradient(to right, #00000033 70%, var(--grey-3));
+    background: linear-gradient(to right, #00000033 70%, white);
   }
 
   .Home-image-overlay-right {
@@ -113,7 +113,7 @@
   }
 
   .Home-image-overlay-location {
-    background: linear-gradient(to left, #00000033 70%, var(--grey-3));
+    background: linear-gradient(to left, #00000033 70%, white);
   }
 }
 
@@ -162,7 +162,7 @@
   }
 
   .Home-image-overlay-left {
-    background: linear-gradient(to bottom, #00000033, var(--grey-3));
+    background: linear-gradient(to bottom, #00000033, white);
   }
 
   .Home-image-overlay-right {
@@ -170,7 +170,7 @@
   }
 
   .Home-image-overlay-location {
-    background: linear-gradient(to bottom, #00000033 70%, var(--grey-3));
+    background: linear-gradient(to bottom, #00000033 70%, white);
   }
 }
 
@@ -251,7 +251,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   border-radius: 5px;
-  border: solid white 1px;
+  border: solid black 1px;
   color: white;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin-top: 1rem;
@@ -283,7 +283,7 @@
 .Home-services,
 .Home-location {
   display: grid;
-  background-color: var(--grey-3);
+  background-color: white;
 }
 
 .Home-get-started,

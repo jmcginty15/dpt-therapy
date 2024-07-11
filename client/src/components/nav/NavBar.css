@@ -17,13 +17,13 @@
 } */
 
 #brand-logo-container {
-  color: white;
+  color: black;
   margin: 0;
   padding: 10px 0 10px 0;
 }
 
 #brand-logo-container:hover {
-  color: var(--grey-2);
+  color: var(--grey-3);
   transition: 0.15s;
 }
 
@@ -32,13 +32,13 @@
 }
 
 .NavBar-link {
-  color: white;
+  color: black;
   position: relative;
 }
 
 .NavBar-link:hover {
   cursor: pointer;
-  color: var(--grey-2);
+  color: var(--grey-3);
   transition: 0.15s;
 }
 
@@ -111,6 +111,7 @@
 #Nav {
   padding-top: 0;
   padding-bottom: 0;
-  background-image: linear-gradient(var(--accent), black);
+  background-color: white;
   position: static;
+  border-bottom: solid 2px black;
 }

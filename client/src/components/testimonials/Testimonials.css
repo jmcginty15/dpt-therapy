@@ -17,6 +17,7 @@
 
 .Testimonials-name {
   margin-top: 0.75rem;
+  font-size: 36px;
 }
 
 .Testimonials-customer {
@@ -67,12 +68,11 @@
 
 .Testimonials-main {
   display: grid;
-  color: white;
-  padding: 15px;
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-  margin-bottom: 50px;
+  padding-top: calc(2rem + 15px);
+  padding-bottom: calc(50px + 15px);
 }
 
 @media (min-width: 768px) {
