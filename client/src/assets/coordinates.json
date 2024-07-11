@@ -1,0 +1,9 @@
+{
+  "stephenville": {
+    "latitude": 32.199938,
+    "longitude": -98.243687,
+    "zoom": 13
+  },
+  "glenrose": { "latitude": 32.248688, "longitude": -97.737063, "zoom": 13 },
+  "lubbock": { "latitude": 33.528437, "longitude": -101.877938, "zoom": 13 }
+}

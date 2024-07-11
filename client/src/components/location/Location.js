@@ -2,6 +2,7 @@ import Map from "../map/Map";
 import stephenville from "../../assets/stephenville.jpg";
 import glenRose from "../../assets/glen-rose.jpg";
 import lubbock from "../../assets/lubbock.jpg";
+import coordinates from "../../assets/coordinates.json";
 import "./Location.css";
 
 const Location = () => {
@@ -32,11 +33,9 @@ const Location = () => {
           </a>
         </div>
         <Map
-          coordinates={{ lat: 32.20100054545242, lng: -98.24578171940642 }}
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDEA1M2iQkyyxOx4kNrVPnW4AP_2Z4Bc2M"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div className="Map" />}
-          mapElement={<div style={{ height: `100%` }} />}
+          latitude={coordinates.stephenville.latitude}
+          longitude={coordinates.stephenville.longitude}
+          zoom={coordinates.stephenville.zoom}
         />
       </div>
       <div
@@ -54,19 +53,14 @@ const Location = () => {
           <br />
           Phone: (254) 436-5766
           <br />
-          <a
-            className="Location-link"
-            href="mailto:glenrose@dpttherapy.com"
-          >
+          <a className="Location-link" href="mailto:glenrose@dpttherapy.com">
             glenrose@dpttherapy.com
           </a>
         </div>
         <Map
-          coordinates={{ lat: 32.24869975775662, lng: -97.73704912183615 }}
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDEA1M2iQkyyxOx4kNrVPnW4AP_2Z4Bc2M"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div className="Map" />}
-          mapElement={<div style={{ height: `100%` }} />}
+          latitude={coordinates.glenrose.latitude}
+          longitude={coordinates.glenrose.longitude}
+          zoom={coordinates.glenrose.zoom}
         />
       </div>
       <div
@@ -84,19 +78,14 @@ const Location = () => {
           <br />
           Phone: (806) 715-2177
           <br />
-          <a
-            className="Location-link"
-            href="mailto:lubbock@dpttherapy.com"
-          >
+          <a className="Location-link" href="mailto:lubbock@dpttherapy.com">
             lubbock@dpttherapy.com
           </a>
         </div>
         <Map
-          coordinates={{ lat: 33.528601359520835, lng: -101.87790403284944 }}
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDEA1M2iQkyyxOx4kNrVPnW4AP_2Z4Bc2M"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div className="Map" />}
-          mapElement={<div style={{ height: `100%` }} />}
+          latitude={coordinates.lubbock.latitude}
+          longitude={coordinates.lubbock.longitude}
+          zoom={coordinates.lubbock.zoom}
         />
       </div>
     </div>
