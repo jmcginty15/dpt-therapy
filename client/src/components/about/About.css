@@ -77,11 +77,11 @@
   }
 }
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   .About-staff-grid {
     width: 70%;
   }
-}
+} */
 
 .About-staff {
   background-color: white;
@@ -91,12 +91,18 @@
 }
 
 .About-staff-grid {
-  margin: 2rem auto 2rem auto;
+  width: 90%;
+  margin: 2rem auto;
   display: grid;
   justify-content: center;
-  grid-template-columns: 100%;
+  grid-template-columns: 33.333% 33.333% 33.333%;
   row-gap: 4rem;
-  column-gap: 4rem;
+  column-gap: 2rem;
+  grid-auto-flow: row;
+}
+
+.lubbock {
+  grid-template-columns: 33.333% 33.333%;
 }
 
 .About-ul {
@@ -105,4 +111,25 @@
 
 .About-li {
   margin: 1rem 0;
+}
+
+.About-staff-group-photo {
+  width: 100%;
+  aspect-ratio: 20 / 7;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  margin: 3rem auto;
+}
+
+@media (max-width: 1000px) {
+  .About-staff-grid {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .About-staff-grid {
+    grid-template-columns: 100%;
+  }
 }
