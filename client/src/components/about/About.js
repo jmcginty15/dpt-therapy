@@ -5,7 +5,7 @@ import treyTaylor from "../../assets/trey-taylor-3.jpg";
 import chrisBramlett from "../../assets/chris-bramlett-2.jpg";
 import caylaLimas from "../../assets/cayla-limas-2.jpg";
 import dptGroup from "../../assets/dpt-group-2.jpg";
-import banner from "../../assets/Re__Website_development_for_DPT/IMG_0533.jpg";
+import banner from "../../assets/about-banner.jpg";
 import summerSides from "../../assets/summer-sides.jpg";
 import maryHolt from "../../assets/mary-holt.jpg";
 import emmyRodroguez from "../../assets/emmy-rodriguez.jpg";
