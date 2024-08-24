@@ -131,18 +131,18 @@ export const staff = {
     {
       name: "Cayla Limas",
       credentials: "PTA",
-      title: "Physical Therapy Assistant",
+      title: "Physical Therapist Assistant",
       photo: caylaLimas,
       degrees: [],
       bioParagraphs: [
-        "Cayla has 12 years of experience as a Physical Therapy Assistant, with 9 of those years in an outpatient setting. She earned her BS in Exercise Sports Science from Texas Tech University in 2009, and an Associate's in Applied Science - Physical Therapist Assistant from Amarillo College in 2012. Cayla has worked in a variety of physical therapy settings ranging from the east coast, west Texas, and then back home to north Texas. Born in Fort Worth, she spent most of her early years locally in Santo, Texas. Cayla knew before graduating high school that she wanted to pursue a career in physical therapy. While competing in softball she sustained an injury which drew her to the physical therapy profession. She enjoys working with patients in a variety of settings, striving to develop a relationship with each of her patients and developing treatment plans specific to the needs of each. Cayla is blessed to spend her life with her husband Abel and two children, Amelia and Adrian. They love spending time on their property fishing, riding horses, and enjoying beautiful sunsets.",
+        "Cayla has 12 years of experience as a Physical Therapist Assistant, with 9 of those years in an outpatient setting. She earned her BS in Exercise Sports Science from Texas Tech University in 2009, and an Associate's in Applied Science - Physical Therapist Assistant from Amarillo College in 2012. Cayla has worked in a variety of physical therapy settings ranging from the east coast, west Texas, and then back home to north Texas. Born in Fort Worth, she spent most of her early years locally in Santo, Texas. Cayla knew before graduating high school that she wanted to pursue a career in physical therapy. While competing in softball she sustained an injury which drew her to the physical therapy profession. She enjoys working with patients in a variety of settings, striving to develop a relationship with each of her patients and developing treatment plans specific to the needs of each. Cayla is blessed to spend her life with her husband Abel and two children, Amelia and Adrian. They love spending time on their property fishing, riding horses, and enjoying beautiful sunsets.",
       ],
       areasOfInterest: [],
     },
     {
       name: "Jessica Viotta",
       credentials: "PTA",
-      title: "Physical Therapy Assistant",
+      title: "Physical Therapist Assistant",
       photo: jessicaViotta,
       degrees: [],
       bioParagraphs: [
@@ -152,11 +152,13 @@ export const staff = {
     },
     {
       name: "Dayna Masters",
-      credentials: null,
-      title: "",
+      credentials: "PTA",
+      title: "Physical Therapist Assistant",
       photo: daynaMasters,
       degrees: [],
-      bioParagraphs: [],
+      bioParagraphs: [
+        "Dayna has 22 years of experience as a Physical Therapist Assistant, with 12 of those years in an outpatient setting. She earned her Masters degree in Kinesiology in 2023, her BS in Applied Science from Tarleton State University in 2017, and an Associates in Applied Science - Physical Therapist Assistant from Tarrant County College in 2002. Dayna has worked in a variety of physical therapy settings ranging from outpatient, in patient, and home health settings in Comanche and Erath County. She spent most of her e practice life in DeLeon, Texas, where she grew up. Dayna is blessed to spend her life with her husband, Kyle, and two children, Sage and Bentley.  They are an active, sport family, and love being a part of the Stephenville community.  She is also the Club Director and owner for Sky High Sports in Stephenville, where she manages a competitive volleyball club.  Dayna is thrilled to be a part of DPT and is committed to developing a relationship with her patients and creating treatment plans specific to their needs.",
+      ],
       areasOfInterest: [],
     },
     {
