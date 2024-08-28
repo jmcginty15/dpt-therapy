@@ -11,7 +11,7 @@ import maryHolt from "../../assets/mary-holt.jpg";
 import emmyRodroguez from "../../assets/emmy-rodriguez.jpg";
 import darinDeaton from "../../assets/darin-deaton.jpg";
 import kyleTanner from "../../assets/kyle-tanner.jpg";
-import jessicaViotta from "../../assets/jessica-viotta.jpg";
+import jessicaViotto from "../../assets/jessica-viotto.jpg";
 import daynaMasters from "../../assets/dayna-masters.jpg";
 import morganRussell from "../../assets/morgan-russell.jpg";
 import maryDeleon from "../../assets/mary-deleon.jpg";
@@ -140,13 +140,13 @@ export const staff = {
       areasOfInterest: [],
     },
     {
-      name: "Jessica Viotta",
+      name: "Jessica Viotto",
       credentials: "PTA",
       title: "Physical Therapist Assistant",
-      photo: jessicaViotta,
+      photo: jessicaViotto,
       degrees: [],
       bioParagraphs: [
-        "Jessica is a native of Stephenville, Texas where she completed her high school education in 2008. She then attended Tarleton State University and in May of 2012 she graduated with a Bachelor of Science in Biology.  Subsequently, she was accepted into the Physical Therapist Assistant Program at Tarrant County College and became licensed in 2014. Upon graduating, Jessica was employed in the home health field, where she was a Certified Preceptor and held that position until March of 2022. In 2020, she received the award for Preceptor of the Year.  After developing a passion for women and women’s health, Jessica became a Certified Doula and Certified American Heart Association CPR Instructor.",
+        "Jessica is a native of Stephenville, Texas where she completed her high school education in 2008. She then attended Tarleton State University and in May of 2012 she graduated with a Bachelor of Science in Biology.  Subsequently, she was accepted into the Physical Therapist Assistant Program at Tarrant County College and became licensed in 2014. Upon graduating, Jessica was employed in the home health field, where she was a Certified Preceptor and held that position until March of 2022. In 2020, she received the award for Preceptor of the Year.  After developing a passion for women and women’s health, Jessica became a Certified Doula and Certified American Heart Association CPR Instructor. When not in the clinic, she enjoys spending time outdoors with her husband Wayne, and their 3 children.",
       ],
       areasOfInterest: [],
     },
