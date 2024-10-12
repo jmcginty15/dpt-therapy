@@ -6,6 +6,8 @@
 
 .Location-map-container {
   background-color: var(--grey-6);
+  min-height: 75vh;
+  position: relative;
 }
 
 .Location-image {

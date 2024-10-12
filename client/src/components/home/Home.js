@@ -309,7 +309,9 @@ const Home = () => {
           <h5 className="Home-location-text">
             Primary location in Stephenville, TX
             <br />
-            New locations opening soon in Glen Rose and Lubbock!
+            Other locations in Glen Rose and Lubbock
+            <br />
+            New location opening soon in Comanche!
           </h5>
           <button
             className="Home-button Home-button-get-started"

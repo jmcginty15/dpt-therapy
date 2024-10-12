@@ -2,6 +2,7 @@ import Map from "../map/Map";
 import stephenville from "../../assets/stephenville.jpg";
 import glenRose from "../../assets/glen-rose.jpg";
 import lubbock from "../../assets/lubbock.jpg";
+import comanche from "../../assets/comanche.jpg";
 import coordinates from "../../assets/coordinates.json";
 import "./Location.css";
 
@@ -87,6 +88,28 @@ const Location = () => {
           longitude={coordinates.lubbock.longitude}
           zoom={coordinates.lubbock.zoom}
         />
+      </div>
+      <div
+        className="Location-image Location-image-mid"
+        style={{ backgroundImage: `url(${comanche})` }}
+      >
+        <div className="Location-image-overlay" />
+      </div>
+      <div className="Location-map-container">
+        <div
+          className="Location-text"
+          style={{
+            height: "fit-content",
+            width: "100%",
+            position: "absolute",
+            top: "50%",
+            transform: "translateY(-50%)",
+          }}
+        >
+          <h5>DPT Therapy & Performance of Comanche</h5>
+          <h5>Under construction!</h5>
+          <h5>Coming fall-winter 2024</h5>
+        </div>
       </div>
     </div>
   );

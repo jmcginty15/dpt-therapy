@@ -101,7 +101,8 @@
   grid-auto-flow: row;
 }
 
-.lubbock {
+.lubbock,
+.glenRose {
   grid-template-columns: 33.333% 33.333%;
 }
 

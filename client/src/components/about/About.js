@@ -4,6 +4,7 @@ import cheyenneStroope from "../../assets/cheyenne-stroope-2.jpg";
 import treyTaylor from "../../assets/trey-taylor-3.jpg";
 import chrisBramlett from "../../assets/chris-bramlett-2.jpg";
 import caylaLimas from "../../assets/cayla-limas-2.jpg";
+import deniseSullivan from "../../assets/denise-sullivan.jpg";
 import dptGroup from "../../assets/dpt-group-2.jpg";
 import banner from "../../assets/about-banner.jpg";
 import summerSides from "../../assets/summer-sides.jpg";
@@ -41,17 +42,17 @@ export const staff = {
       ],
       areasOfInterest: [],
     },
-    {
-      name: "Mary Holt",
-      credentials: null,
-      title: "Front Office Coordinator",
-      photo: maryHolt,
-      degrees: [],
-      bioParagraphs: [
-        "Mary was born and raised in Fort Worth, Texas. She graduated from Castleberry High School in 1991 where she pursued her love of music and sang in their Acapella Choir. She lives in Cleburne and has two grown children and four adorable grandchildren. Mary loves to volunteer doing service projects for several organizations in her community. She is currently attending Penn Foster to obtain her Certified Medical Administrative Assistant Certification and will go on to finish her Associates Degree in Medical Office Administration. She is passionate about helping people and has over 20 years of customer relations experience. She loves to make people smile and help make them feel comfortable and welcome in any and every situation.",
-      ],
-      areasOfInterest: [],
-    },
+    // {
+    //   name: "Mary Holt",
+    //   credentials: null,
+    //   title: "Front Office Coordinator",
+    //   photo: maryHolt,
+    //   degrees: [],
+    //   bioParagraphs: [
+    //     "Mary was born and raised in Fort Worth, Texas. She graduated from Castleberry High School in 1991 where she pursued her love of music and sang in their Acapella Choir. She lives in Cleburne and has two grown children and four adorable grandchildren. Mary loves to volunteer doing service projects for several organizations in her community. She is currently attending Penn Foster to obtain her Certified Medical Administrative Assistant Certification and will go on to finish her Associates Degree in Medical Office Administration. She is passionate about helping people and has over 20 years of customer relations experience. She loves to make people smile and help make them feel comfortable and welcome in any and every situation.",
+    //   ],
+    //   areasOfInterest: [],
+    // },
     {
       name: "Emmy Rodroguez",
       credentials: null,
@@ -129,6 +130,17 @@ export const staff = {
       ],
     },
     {
+      name: "Denise Sullivan",
+      credentials: "PT, DPT",
+      title: "Doctor of Physical Therapy",
+      photo: deniseSullivan,
+      degrees: [],
+      bioParagraphs: [
+        "Denise grew up in the Texas panhandle where she graduated high school from Childress in 2007. In 2011, she graduated from West Texas A&M University with a Bachelor of Science in Sport and Exercise Sciences. After graduation, she quickly moved to Lubbock to attended Texas Tech University Health Sciences Center where she earned her Doctor of Physical Therapy degree in 2014. She started her career in Outpatient Orthopedics in Fort Worth, TX. She met and married her husband, Aaron, in 2016. They have two kids, Caroline & Mark, that keeps them busy.  Growing up a coach’s kid, she loves all things sports, specifically fall football, Wreck Em Tech. In her spare time, she likes to be actively involved with her church, exercise, read suspenseful/thrilling novels, taking trips to her family’s lake house and fun in the sun in Florida, where her husband’s family resides. She is certified in Graston Technique and is TPDN certified. She has a background in all orthopedic diagnoses.",
+      ],
+      areasOfInterest: [],
+    },
+    {
       name: "Cayla Limas",
       credentials: "PTA",
       title: "Physical Therapist Assistant",
@@ -150,17 +162,17 @@ export const staff = {
       ],
       areasOfInterest: [],
     },
-    {
-      name: "Dayna Masters",
-      credentials: "PTA",
-      title: "Physical Therapist Assistant",
-      photo: daynaMasters,
-      degrees: [],
-      bioParagraphs: [
-        "Dayna has 22 years of experience as a Physical Therapist Assistant, with 12 of those years in an outpatient setting. She earned her Masters degree in Kinesiology in 2023, her BS in Applied Science from Tarleton State University in 2017, and an Associates in Applied Science - Physical Therapist Assistant from Tarrant County College in 2002. Dayna has worked in a variety of physical therapy settings ranging from outpatient, in patient, and home health settings in Comanche and Erath County. She spent most of her e practice life in DeLeon, Texas, where she grew up. Dayna is blessed to spend her life with her husband, Kyle, and two children, Sage and Bentley.  They are an active, sport family, and love being a part of the Stephenville community.  She is also the Club Director and owner for Sky High Sports in Stephenville, where she manages a competitive volleyball club.  Dayna is thrilled to be a part of DPT and is committed to developing a relationship with her patients and creating treatment plans specific to their needs.",
-      ],
-      areasOfInterest: [],
-    },
+    // {
+    //   name: "Dayna Masters",
+    //   credentials: "PTA",
+    //   title: "Physical Therapist Assistant",
+    //   photo: daynaMasters,
+    //   degrees: [],
+    //   bioParagraphs: [
+    //     "Dayna has 22 years of experience as a Physical Therapist Assistant, with 12 of those years in an outpatient setting. She earned her Masters degree in Kinesiology in 2023, her BS in Applied Science from Tarleton State University in 2017, and an Associates in Applied Science - Physical Therapist Assistant from Tarrant County College in 2002. Dayna has worked in a variety of physical therapy settings ranging from outpatient, in patient, and home health settings in Comanche and Erath County. She spent most of her e practice life in DeLeon, Texas, where she grew up. Dayna is blessed to spend her life with her husband, Kyle, and two children, Sage and Bentley.  They are an active, sport family, and love being a part of the Stephenville community.  She is also the Club Director and owner for Sky High Sports in Stephenville, where she manages a competitive volleyball club.  Dayna is thrilled to be a part of DPT and is committed to developing a relationship with her patients and creating treatment plans specific to their needs.",
+    //   ],
+    //   areasOfInterest: [],
+    // },
     {
       name: "Christy McMinn",
       credentials: "Administrator",
@@ -201,15 +213,15 @@ export const staff = {
       bioParagraphs: [],
       areasOfInterest: [],
     },
-    {
-      name: "Shalie Jones",
-      credentials: null,
-      title: "Physical Therapy Technician",
-      photo: shalieJones,
-      degrees: [],
-      bioParagraphs: [],
-      areasOfInterest: [],
-    },
+    // {
+    //   name: "Shalie Jones",
+    //   credentials: null,
+    //   title: "Physical Therapy Technician",
+    //   photo: shalieJones,
+    //   degrees: [],
+    //   bioParagraphs: [],
+    //   areasOfInterest: [],
+    // },
   ],
   lubbock: [
     {
@@ -300,7 +312,7 @@ const About = () => {
           }}
         />
         <h2 className="About-subtitle">GLEN ROSE</h2>
-        <div className="About-staff-grid">
+        <div className="About-staff-grid glenRose">
           {staff.glenRose.map((member, i) => (
             <StaffCard
               key={i}

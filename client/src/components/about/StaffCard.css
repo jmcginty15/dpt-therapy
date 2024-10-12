@@ -10,7 +10,7 @@
 
 .StaffCard-photo {
   border-radius: 3px;
-  width: calc(100% - 4rem);
+  width: calc(100% - 2rem);
   aspect-ratio: 4 / 3;
   background-size: cover;
   background-position-x: center;
